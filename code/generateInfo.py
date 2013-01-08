@@ -94,6 +94,7 @@ def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='tes
         #separation
         norm_r_12 = sqrt(sum(r_12*r_12))
         total_mass = mass_1 + mass_2
+        reduced_mass  = mass_1 * mass_2 / total_mass
         #print "E", E_kin, E_pot, L_12_norm
         #decompose betwee radial and tangetial velocity
         norm_r_12 = sqrt(sum(r_12*r_12))
@@ -112,10 +113,10 @@ def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='tes
 
         if(v_radial_norm<0.0 and norm_r_12 < 1.0):
 #            print v_tan_norm, v_radial_norm, norm_v_12,lambda1_1, lambda2_1, lambda3_1, lambda1_2, lambda2_2, lambda3_2
-            out.write('%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f\n' % 
+            out.write('%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f\n' % 
                       (v_radial_norm, v_tan_norm, v_cm_norm, v_1_norm, 
                        v_2_norm, E_kin, E_pot, L_12_norm, lambda1_1, 
-                       lambda2_1, lambda3_1, lambda1_2, lambda2_2, lambda3_2, norm_r_12, total_mass))
+                       lambda2_1, lambda3_1, lambda1_2, lambda2_2, lambda3_2, norm_r_12, total_mass, reduced_mass))
 
             outraw.write('%e %e %f %f %f %f %f %f %f %f %f %f %f %f\n' % 
                       (mass_1, mass_2, r_1[0], r_1[1], r_1[2], r_2[0], r_2[1], r_2[2],
