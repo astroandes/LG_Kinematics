@@ -144,20 +144,6 @@ Note: the observational uncertainties in the position vector correspond to a $5\
 \end{table}
 
 
-\subsection{The kinematic environment}
-We implement a large scale environment classification to quantify the dynamical state of the dark matter field. A detailed description of the algorithm can be found in \cite{Hoffman12}. Here we briefly describe its main physical assumptions.
-
-The classification is based on computing the following velocity shear over a grid:
-
-\begin{equation}
-\Sigma_{ij}=-\frac{1}{2H_{0}}\left(\frac{\partial v_{i}}{\partial r_{j}}+\frac{\partial v_{j}}{\partial r_{i}}\right),
-\end{equation}
-
-where $i,j=x,y,z$, $H_{0}$ is the Hubble constant and $v_{i}, r_{i}$ correspond to the peculiar velocities and comoving positions, respectively. The matrix  $\Sigma_{ij}$ is symmetric and real, allowing for its diagonalization with real eigenvalues $\lambda_{1}>\lambda_{2}>\lambda_{3}$. A positive value of $\lambda_{i}>0$ implies collapse in comoving coordinates along the direction defined the corresponding eigenvector $u_{i}$. This method allows for the classification of each point as a peak, filament, sheet and void, if there are three, two, one and zero eigenvalues larger than a given threshold $\lambda_{\rm th}$, respectively.
-
-
-Environment classification is an intrinsic multi-scale problem. Morphological features can appear or disappear depending on the physical scale that defines the density and velocity field. In the case of the LG kinematics there is a physical scale defined by the typical separation between the MW and M31, which is on the order of $\sim 0.5$ \hMpc. For this reason, all the results for the environment that we present here are computed over a grid of $256^3$ cells with a spacing of $0.97$\hMpc, where a first CIC interpolation is performed and later a Gaussian smoothing with a variance scale of $0.97$\hMpc is applied. In this Letter we are interested in the possible range of $\lambda_{i}$ spanned by the halo pairs that display dynamics similar to those of the observed LG. 
-
 
 \section{Results}
 \label{sec:results}
@@ -167,7 +153,7 @@ Environment classification is an intrinsic multi-scale problem. Morphological fe
 \begin{figure*}
 \begin{center}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt.pdf}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_narrow_rt.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_narrow.pdf}
 \caption{Histograms of the radial and tangential velocities for LG-like halo pairs in the Bolshoi simulation. The left panel corresponds to the general LG-like pair simple, the right panel corresponds to the subsample with cuts on pair separation and total mass, matching the observational constraints. The squared panel shows as a shaded histogram the number of pairs on the radial and tangential velocities plane. The rectangular panels show the histograms when only one of the velocity components is used to bin the data. The half ellipsoid corresponds to the observed observational constraints for M31 in the Galactocentric rest frame: $v_{\rm rad}=109.2\pm 4.4$ km s$^{11}$ and $v_{\rm tan}< 34.3$ km s$^{-1}$ \citep{vanderMarel12}. The circles represent the positions of the pairs from the constrained simulations. The highest number density in the plot is obtained around $v_{\rm rad,\Lambda CDM} = 65\pm5$ \kms, $v_{\rm tan,\Lambda CDM} = 62\pm5$ \kms}
 \label{fig:rt}
 \end{center}
@@ -210,28 +196,20 @@ In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-li
 \begin{figure*}
 \begin{center}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ.pdf}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_narrow_EJ.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_narrow.pdf}
 \caption{Histograms of the orbital angular momentum ($l_{\rm orb}$) and mechanical energy ($e_{\rm tot}$) per unit of reduced mass calculated considering the halos as point masses. The panel distribution is the same as in Figure \ref{fig:rt}. The contour line shows the $1-\sigma$ uncertainty estimated through Monte Carlo techniques from the observational values summarized in Table 1. The poorer constraints on this plane are due to the added uncertainties on the tangential velocity ($100\%$), the square of the norm of the velocity ($40\%$) and the total mass of the two halos ($20\%$). }
 \label{fig:EJ}
 \end{center}
 \end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \begin{center}
-\includegraphics[keepaspectratio=true,width=0.50\textwidth]{./figures/test_lambda.pdf}
-\caption{Integrated probability distributions for the three eigenvalues in the V-web environment classification algorithms. The dark region marks the eigenvalue interval defined by the nine (9) pairs with similar kinematics as observed in the Local Group.}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_lambda.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_lambda_narrow.pdf}
+\caption{Spin parameter}
 \label{fig:lambda}
 \end{center}
-\end{figure}
-
-
-We compute the V-web eigenvalue distribution for all halos more massive than $10^{11}$\hMsun in the Bolshoi Simulation. Figure \ref{fig:lambda} illustrates the results of this exercise. The solid line shows the integrated distribution for the three eigenvalues. The shadow regions are defined by the minimum and maximum of the eigenvalues in the nine (9) pairs in the LG-like sample that show similar kinematics as the observations. 
-
-
-There is a preference for the largest eigenvalue to be positive  and have an upper bound $\lambda_{1}<1$, the second largest eigenvalue is bounded between $-0.1 < \lambda_{2} < 0.3$, while the smallest eigenvalue is always negative with a lower bound $\lambda_{3}>-0.5$. Under these conditions the peak and the void environment are completely excluded as environmental hosts of LG-like pairs for reasonable values of the threshold eigenvalue $\lambda_{\rm th}\approx 0.2-0.4$ \citep{Hoffman12,Libeskind12}. All pairs with kinematics similar to observations must reside in filaments or sheets. The result is similar if we consider instead the $108$ pairs with a weak tangential velocity component $f_{\rm t}<0.32$. 
-
-However, the inverse condition is weak. Making a selection of pairs by constraining the eigenvalues $\lambda_{i}$ to the interval mentioned above, does not bias significantly the values for the radial and tangential velocities. This suggests that residing in filaments/sheets is a condition common to isolated pairs, regardless of their kinematics. A detailed study on the influence of environment in LG-like pairs will be presented in a forthcoming publication (Bustamante et al. {\it in prep}).
-
+\end{figure*}
 
 
 \section{Conclusions}
@@ -243,7 +221,7 @@ Using the same absolute values for the uncertainty in the observed velocity comp
 
 Approximating the LG as two point masses we express the above mentioned results in terms of the orbital angular momentum $l_{\rm orb}$ and the mechanical energy $e_{\rm tot}$ per unit of reduced mass. We find that the uncertainties in the tangential velocity, the square of the norm of the velocity and the total mass in the LG produce poorer constraints on the number of simulated pairs that are consistent with the observations. Nevertheless, in the case of the LG-pair sample that also fulfills the separation and total mass criteria there is a slight tension between simulation and observation. A reduction by a factor of $2$ in the observational uncertainty on the radial velocity would clarify this issue.
 
-{\bf In the three pairs from constrained simulations we find kinematics dominated by radial velocities. However their velocity components differ from the observational constraints and their mechanical energy and orbital angular momentum are in modest concordance with observations. This conforms to the fact that the observational values do not seem to be common in a $\Lambda$CDM Universe. Additionally we have found that pairs with velocities dominated by the radial component (by the same amount allowed by observations) are preferably to be found in filaments and sheets of dark matter. }
+{\bf In the three pairs from constrained simulations we find kinematics dominated by radial velocities. However their velocity components differ from the observational constraints and their mechanical energy and orbital angular momentum are in modest concordance with observations. This conforms to the fact that the observational values do not seem to be common in a $\Lambda$CDM Universe.}
 
 {\bf In this Letter we have shown that LG-like pairs in $\Lambda$CDM show prefered values for their relative velocities, angular momentum and mechanical energy. These values are in tension with the observational results. Pairs with highly radial orbits are not common in $\Lambda$CDM. This hints that the formation and evolution of the Local Group had special characteristics with respect to the average expectations in $\Lambda$CDM. Understanding the origin and implications of this result deserve further study.}
 
@@ -255,139 +233,7 @@ J.E.F-R acknowledges financial support from the Vicerrector\'{\i}a de Investigac
 
 
 \bibliographystyle{apj}
-%\bibliography{references} 
-\begin{thebibliography}{25}
-\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
-
-\bibitem[{{Besla} {et~al.}(2007){Besla}, {Kallivayalil}, {Hernquist},
-  {Robertson}, {Cox}, {van der Marel}, \& {Alcock}}]{Besla2007}
-{Besla}, G., {Kallivayalil}, N., {Hernquist}, L., {Robertson}, B., {Cox},
-  T.~J., {van der Marel}, R.~P., \& {Alcock}, C. 2007, \apj, 668, 949
-
-\bibitem[{{Forero-Romero} {et~al.}(2011){Forero-Romero}, {Hoffman}, {Yepes},
-  {Gottl{\"o}ber}, {Piontek}, {Klypin}, \& {Steinmetz}}]{ForeroRomero2011}
-{Forero-Romero}, J.~E., {Hoffman}, Y., {Yepes}, G., {Gottl{\"o}ber}, S.,
-  {Piontek}, R., {Klypin}, A., \& {Steinmetz}, M. 2011, \mnras, 417, 1434
-
-\bibitem[{{Fouquet} {et~al.}(2012){Fouquet}, {Hammer}, {Yang}, {Puech}, \&
-  {Flores}}]{Fouquet2012}
-{Fouquet}, S., {Hammer}, F., {Yang}, Y., {Puech}, M., \& {Flores}, H. 2012,
-  \mnras, 427, 1769
-
-\bibitem[{{Freeman} \& {Bland-Hawthorn}(2002)}]{Freeman2002}
-{Freeman}, K., \& {Bland-Hawthorn}, J. 2002, \araa, 40, 487
-
-\bibitem[{{Gottloeber} {et~al.}(2010){Gottloeber}, {Hoffman}, \&
-  {Yepes}}]{clues2010}
-{Gottloeber}, S., {Hoffman}, Y., \& {Yepes}, G. 2010, ArXiv e-prints
-
-\bibitem[{{Hoffman} {et~al.}(2012){Hoffman}, {Metuki}, {Yepes},
-  {Gottl{\"o}ber}, {Forero-Romero}, {Libeskind}, \& {Knebe}}]{Hoffman12}
-{Hoffman}, Y., {Metuki}, O., {Yepes}, G., {Gottl{\"o}ber}, S., {Forero-Romero},
-  J.~E., {Libeskind}, N.~I., \& {Knebe}, A. 2012, \mnras, 425, 2049
-
-\bibitem[{{Jarosik} {et~al.}(2011){Jarosik}, {Bennett}, {Dunkley}, {Gold},
-  {Greason}, {Halpern}, {Hill}, {Hinshaw}, {Kogut}, {Komatsu}, {Larson},
-  {Limon}, {Meyer}, {Nolta}, {Odegard}, {Page}, {Smith}, {Spergel}, {Tucker},
-  {Weiland}, {Wollack}, \& {Wright}}]{Jarosik2011}
-{Jarosik}, N., {Bennett}, C.~L., {Dunkley}, J., {Gold}, B., {Greason}, M.~R.,
-  {Halpern}, M., {Hill}, R.~S., {Hinshaw}, G., {Kogut}, A., {Komatsu}, E.,
-  {Larson}, D., {Limon}, M., {Meyer}, S.~S., {Nolta}, M.~R., {Odegard}, N.,
-  {Page}, L., {Smith}, K.~M., {Spergel}, D.~N., {Tucker}, G.~S., {Weiland},
-  J.~L., {Wollack}, E., \& {Wright}, E.~L. 2011, \apjs, 192, 14
-
-\bibitem[{{Karachentsev} {et~al.}(2004){Karachentsev}, {Karachentseva},
-  {Huchtmeier}, \& {Makarov}}]{Karachentsev04}
-{Karachentsev}, I.~D., {Karachentseva}, V.~E., {Huchtmeier}, W.~K., \&
-  {Makarov}, D.~I. 2004, \aj, 127, 2031
-
-\bibitem[{{Kazantzidis} {et~al.}(2008){Kazantzidis}, {Bullock}, {Zentner},
-  {Kravtsov}, \& {Moustakas}}]{Kazantzidis2008}
-{Kazantzidis}, S., {Bullock}, J.~S., {Zentner}, A.~R., {Kravtsov}, A.~V., \&
-  {Moustakas}, L.~A. 2008, \apj, 688, 254
-
-\bibitem[{{Klypin} {et~al.}(1999){Klypin}, {Kravtsov}, {Valenzuela}, \&
-  {Prada}}]{Klypin99}
-{Klypin}, A., {Kravtsov}, A.~V., {Valenzuela}, O., \& {Prada}, F. 1999, \apj,
-  522, 82
-
-\bibitem[{{Klypin} {et~al.}(2011){Klypin}, {Trujillo-Gomez}, \&
-  {Primack}}]{Bolshoi}
-{Klypin}, A.~A., {Trujillo-Gomez}, S., \& {Primack}, J. 2011, \apj, 740, 102
-
-\bibitem[{{Knebe} {et~al.}(2011){Knebe}, {Libeskind}, {Doumler}, {Yepes},
-  {Gottl{\"o}ber}, \& {Hoffman}}]{Knebe2011}
-{Knebe}, A., {Libeskind}, N.~I., {Doumler}, T., {Yepes}, G., {Gottl{\"o}ber},
-  S., \& {Hoffman}, Y. 2011, \mnras, 417, L56
-
-\bibitem[{{Libeskind} {et~al.}(2012){Libeskind}, {Hoffman}, {Forero-Romero},
-  {Gottl{\"o}ber}, {Knebe}, {Steinmetz}, \& {Klypin}}]{Libeskind12}
-{Libeskind}, N.~I., {Hoffman}, Y., {Forero-Romero}, J., {Gottl{\"o}ber}, S.,
-  {Knebe}, A., {Steinmetz}, M., \& {Klypin}, A. 2012, ArXiv e-prints
-
-\bibitem[{{Liu} {et~al.}(2011){Liu}, {Gerke}, {Wechsler}, {Behroozi}, \&
-  {Busha}}]{Liu2011}
-{Liu}, L., {Gerke}, B.~F., {Wechsler}, R.~H., {Behroozi}, P.~S., \& {Busha},
-  M.~T. 2011, \apj, 733, 62
-
-\bibitem[{{McConnachie} {et~al.}(2009){McConnachie}, {Irwin}, {Ibata},
-  {Dubinski}, {Widrow}, {Martin}, {C{\^o}t{\'e}}, {Dotter}, {Navarro},
-  {Ferguson}, {Puzia}, {Lewis}, {Babul}, {Barmby}, {Bienaym{\'e}}, {Chapman},
-  {Cockcroft}, {Collins}, {Fardal}, {Harris}, {Huxor}, {Mackey},
-  {Pe{\~n}arrubia}, {Rich}, {Richer}, {Siebert}, {Tanvir}, {Valls-Gabaud}, \&
-  {Venn}}]{pandas09}
-{McConnachie}, A.~W., {Irwin}, M.~J., {Ibata}, R.~A., {Dubinski}, J., {Widrow},
-  L.~M., {Martin}, N.~F., {C{\^o}t{\'e}}, P., {Dotter}, A.~L., {Navarro},
-  J.~F., {Ferguson}, A.~M.~N., {Puzia}, T.~H., {Lewis}, G.~F., {Babul}, A.,
-  {Barmby}, P., {Bienaym{\'e}}, O., {Chapman}, S.~C., {Cockcroft}, R.,
-  {Collins}, M.~L.~M., {Fardal}, M.~A., {Harris}, W.~E., {Huxor}, A., {Mackey},
-  A.~D., {Pe{\~n}arrubia}, J., {Rich}, R.~M., {Richer}, H.~B., {Siebert}, A.,
-  {Tanvir}, N., {Valls-Gabaud}, D., \& {Venn}, K.~A. 2009, \nat, 461, 66
-
-\bibitem[{{Moore} {et~al.}(1999){Moore}, {Ghigna}, {Governato}, {Lake},
-  {Quinn}, {Stadel}, \& {Tozzi}}]{Moore99}
-{Moore}, B., {Ghigna}, S., {Governato}, F., {Lake}, G., {Quinn}, T., {Stadel},
-  J., \& {Tozzi}, P. 1999, \apjl, 524, L19
-
-\bibitem[{{Peebles} \& {Nusser}(2010)}]{Peebles2010}
-{Peebles}, P.~J.~E., \& {Nusser}, A. 2010, \nat, 465, 565
-
-\bibitem[{{Purcell} \& {Zentner}(2012)}]{Purcell2012}
-{Purcell}, C.~W., \& {Zentner}, A.~R. 2012, {JCAP}, 12, 7
-
-\bibitem[{{Ribas} {et~al.}(2005){Ribas}, {Jordi}, {Vilardell}, {Fitzpatrick},
-  {Hilditch}, \& {Guinan}}]{ribas05}
-{Ribas}, I., {Jordi}, C., {Vilardell}, F., {Fitzpatrick}, E.~L., {Hilditch},
-  R.~W., \& {Guinan}, E.~F. 2005, \apjl, 635, L37
-
-\bibitem[{{Riebe} {et~al.}(2011){Riebe}, {Partl}, {Enke}, {Forero-Romero},
-  {Gottloeber}, {Klypin}, {Lemson}, {Prada}, {Primack}, {Steinmetz}, \&
-  {Turchaninov}}]{2011arXiv1109.0003R}
-{Riebe}, K., {Partl}, A.~M., {Enke}, H., {Forero-Romero}, J., {Gottloeber}, S.,
-  {Klypin}, A., {Lemson}, G., {Prada}, F., {Primack}, J.~R., {Steinmetz}, M.,
-  \& {Turchaninov}, V. 2011, ArXiv e-prints
-
-\bibitem[{{Teyssier} {et~al.}(2012){Teyssier}, {Johnston}, \&
-  {Kuhlen}}]{Teyssier2012}
-{Teyssier}, M., {Johnston}, K.~V., \& {Kuhlen}, M. 2012, \mnras, 426, 1808
-
-\bibitem[{{Tikhonov} \& {Klypin}(2009)}]{Anton09}
-{Tikhonov}, A.~V., \& {Klypin}, A. 2009, \mnras, 395, 1915
-
-\bibitem[{{Tollerud} {et~al.}(2011){Tollerud}, {Boylan-Kolchin}, {Barton},
-  {Bullock}, \& {Trinh}}]{Tollerud2011}
-{Tollerud}, E.~J., {Boylan-Kolchin}, M., {Barton}, E.~J., {Bullock}, J.~S., \&
-  {Trinh}, C.~Q. 2011, \apj, 738, 102
-
-\bibitem[{{van der Marel} {et~al.}(2012){van der Marel}, {Fardal}, {Besla},
-  {Beaton}, {Sohn}, {Anderson}, {Brown}, \& {Guhathakurta}}]{vanderMarel12}
-{van der Marel}, R.~P., {Fardal}, M., {Besla}, G., {Beaton}, R.~L., {Sohn},
-  S.~T., {Anderson}, J., {Brown}, T., \& {Guhathakurta}, P. 2012, \apj, 753, 8
-
-\bibitem[{{van der Marel} \& {Guhathakurta}(2008)}]{vanderMarel08}
-{van der Marel}, R.~P., \& {Guhathakurta}, P. 2008, \apj, 678, 187
-
-\end{thebibliography}
+\bibliography{references} 
 
 
 \end{document}
