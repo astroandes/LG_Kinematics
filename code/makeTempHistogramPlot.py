@@ -13,7 +13,7 @@ def ellipse(ra,rb,ang,xcenter,ycenter):
     Y = rb*sin(theta_bins) + ycenter
     return X,Y
 
-def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], xlims=-99, ylims =-99 , \
+def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], clues_label='',xlims=-99, ylims =-99 , \
                               nxbins = 50,nybins=50, bw=0, nbins=100,contours=1,sigma=1,line=1, 
                           xlabel='A', ylabel='B', mean_obs=0, sigma_obs=0, 
                           X_field=array([]), Y_field=array([]), Z_field=array([]), levels=array([])):
@@ -88,8 +88,8 @@ def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], xlims=-99, ylims =
     else: contourcolor = 'white'
 
     if clues.size:
-        axTemperature.scatter(clues[:,0], clues[:,1], color='white', edgecolors='black', s=200, label='$\mathrm{Constrained\ Simulations}$')        
-        axTemperature.legend(loc=0, scatterpoints=1)
+        axTemperature.scatter(clues[:,0], clues[:,1], color='white', edgecolors='black', s=200, label=clues_label)        
+        axTemperature.legend(loc=0, scatterpoints=1, fontsize=20)
 
     if X_field.size:
         print 'HOLA'
