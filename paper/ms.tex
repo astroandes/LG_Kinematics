@@ -38,11 +38,11 @@
 \def\caii{Ca\,{\smcap ii}}
 
 
-\shorttitle{The not so common kinematics of the Local Group}
+\shorttitle{Local Group Kinematics}
 \shortauthors{Forero-Romero et al.}
 
 \begin{document}
-\title{The not so common kinematics of the Local Group}
+\title{The kinematics of the Local Group in a cosmological context}
 \author{
 J. E.\ Forero-Romero\altaffilmark{1}, 
 Y. Hoffman\altaffilmark{2}, 
@@ -62,8 +62,7 @@ Cantoblanco E-280049, Spain}
 
 \begin{abstract}
    
-Recent observations constrained the tangential velocity of M31 with respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume high resolution N-body cosmological simulation to statistically study this kinematics in the context of the $\Lambda$CDM cosmology. We define the Local Group (LG) to be composed by two dominant separate halos hosting the MW and the M31 galaxy fulfilling certain isolation criteria. We find that the most probable values for the tangential and radial velocities in these pairs are $v_{\rm rad, \Lambda CDM}=-65\pm 5$\kms and $v_{\rm tan, \Lambda CDM}=62\pm 5$\kms. Within a similar absolute uncertainty defined by observations the pairs centered around these values are $\sim5$ times more abundant than the pairs in the observational interval. Furthermore, we find that only $\sim8\%$ of the pairs show a ratio between its tangential and radial velocity consistent with observations. {\bf This tension increases if we make a narrower selection in the pair sample to match the observational constraints on pair separation and total mass. Expressing these results in terms of the angular momentum and mechanical energy per unit mass also reflects this disagreement albeit in a less strong fashion due to the larger uncertainties inferred for these physical quantities. We also include in our analysis results from constrained simulations and cosmic web charachterization techniques. The results of this study imply that the formation and evolution of the LG differ from the average $\Lambda$CDM halo pair.}
-
+Recent observations constrained the tangential velocity of M31 with respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume high resolution N-body cosmological simulation to statistically study this kinematics in the context of the $\Lambda$CDM cosmology. We define the Local Group (LG) to be composed by two dominant separate halos hosting the MW and the M31 galaxy fulfilling certain isolation criteria. We find that the most probable values for the tangential and radial velocities in these pairs are $v_{\rm rad, \Lambda CDM}=-65\pm 5$\kms and $v_{\rm tan, \Lambda CDM}=62\pm 5$\kms. Within a similar absolute uncertainty defined by observations the pairs centered around these values are $\sim5$ times more abundant than the pairs in the observational interval. Furthermore, we find that only $\sim8\%$ of the pairs show a ratio between its tangential and radial velocity consistent with observations. {\bf This tension increases if we make a narrower selection in the pair sample to match the observational constraints on pair separation and total mass. Expressing these results in terms of the angular momentum and mechanical energy per unit mass also reflects this disagreement albeit in a less strong fashion due to the larger uncertainties inferred for these physical quantities. From these quantities we define a reduced spin parameter and use it to easily characterize the LG with repect to other halo pairs in $\Lambda$CDM. We also include in our analysis results from constrained simulations and cosmic web charachterization techniques. The results of this study suggest that the formation and evolution of the LG differ from the average $\Lambda$CDM halo pair.}
 \end{abstract}
 
 \begin{keywords}
@@ -183,9 +182,21 @@ The results are summarized in Figure \ref{fig:EJ} following the same plotting co
 
 In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-like pairs to have similar separation and total mass makes them occupy a narrower region. This shows that there are preferred values for $e_{\rm tot}-l_{\rm orb}$. Under the assumption of quasi-conserved quantity it means that their formation and evolution conditions must be similar. In this case the agreement with observations is moderate. A reduction by a factor of $2$ in the uncertainty of the tangential velocity showing that the tangential velocity is below $17$\kms would clearly bring the observations in the region of low $l_{\rm orb}$, clearly below the average $\Lambda$CDM expectation.
 
+\subsection{Reduced Spin Parameter}
+
+In complete analogy to the spin parameter, $\lambda$, used to describe dark matter halos, we define the same parameter for halo pairs. This quantity combines into a single scalar the energy and the angular momentum allowing us to make an even more straightforward comparison between the results allowed for observations an the expectations in $\Lambda$CDM. The precise definition of the dimensionless $\lambda$ parameter is the following
 
 
+\begin{equation}
+\lambda = \frac{\mu^{3/2} l_{\rm orb} \sqrt{e_{\rm tot}}}{G M^{5/2}}, 
+\end{equation}
 
+where the $\mu=m_{\rm M31}m_{\rm MW}/M)$ is the reduced mass for the pair.
+
+
+We compare the distribution for  $\lambda$ obtained from the pair population in the Bolshoi simulation and the distribution from the MonteCrlo simulation used to estimate the uncertainties on $e_{\rm tot}$ and $l_{\rm orb}$. The results can be found in Figure \ref{fig:lambda}. The left panel shows the results from the full sample of isolated pairs while the right panel corresponds to the smaller pair sample with restrictions on the separation and total mass. 
+
+Both panels tell in a clear way the same story as the $e_{\rm tot}-l_{\rm orb}$ plane.
 
 
 
@@ -231,6 +242,8 @@ Approximating the LG as two point masses we express the above mentioned results 
 \section*{Acknowledgments}  
 J.E.F-R acknowledges financial support from the Vicerrector\'{\i}a de Investigaciones at Universidad de los Andes through its {\it Fondo de Apoyo a Profesores Asistentes} and the Peter and Patricia Gruber Foundation through its fellowship administered by the International Astronomical Union.
 
+
+The data and codes that allow the results of this paper to be reproduced can be found as a github repository {\texttt https://github.com/forero/LG\_Kinematics/}
 
 \bibliographystyle{apj}
 \bibliography{references} 
