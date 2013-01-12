@@ -81,10 +81,6 @@ In addition we make use of three N-body simulations with constrained initial con
 
 This Letter is structured as follows. In the next section we present the N-body simulations, the criteria we use to select LG-like halo pairs and the method we use to characterize the cosmic web. In Section \ref{sec:results} we present the results for the dynamics in these pairs in terms of the tangential/radial velocities and the orbital angular momentum/mechanical energy. In the same section we investigate what kind of large scale environment can foster the production of pairs with dynamics similar to those observed in the LG. Finally, in the last section we comment and conclude about the implications of these results in the context of the $\Lambda$CDM model.
 
-\section{Simulation and Environment}
-\label{sec:methods}
-\subsection{The Bolshoi and Constrained Simulations}
-
 
 
 
@@ -97,6 +93,11 @@ This Letter is structured as follows. In the next section we present the N-body 
 \caption{\label{fig:distros} Distributions of separations and total halo mass (Milky Way and M31) in the LG-like pairs selected from the Bolshoi Simulation.}
 \end{center}
 \end{figure*}
+
+\section{Simulation and Environment}
+\label{sec:methods}
+\subsection{The Bolshoi and Constrained Simulations}
+
 
 
 The Bolshoi simulation follows the non-linear evolution of the dark matter density field using N-body techniques. The simulation has a cubic volume of $250$\hMpc comoving on a side, sampled with $2048^{3}$ particles. The cosmological parameters used in the simulation are $\Omega_{m}=0.27, \Omega_{\Lambda}=0.73, \sigma_{8}=0.82, h=0.70$ and $n=0.95$, corresponding to the matter density, vacuum energy density, the normalization of the power spectrum, the reduced Hubble constant and the index of the slope in the initial power spectrum. This set of parameter is compatible with the analysis  of the seventh year of data from the Wilkinson Microwave Anisotropy Probe (WMAP) \citep{Jarosik2011}. A detailed description of this simulation can be found in \citep{Bolshoi}.
@@ -200,6 +201,7 @@ In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-li
 \begin{center}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_lambda.pdf}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_lambda_narrow.pdf}
+\caption{{\rm \label{fig:lambda} Normalized histograms of the dimensionless spin parameter $\lambda$ for the pairs in the Bolshoi simulation and its infered values for the LG from the observational constraints from a Monte Carlo simulation. The left panel includes all the LG-pairs while the right panel includes a reduced sample of pairs that match the separation and total mass infered from Local Group observations. The vertical lines with the white dots represent the values inferred for pairs in the constrained simulations.}}
 \caption{Spin parameter}
 \label{fig:lambda}
 \end{center}
@@ -207,7 +209,7 @@ In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-li
 
 
 
-\subsection{Reduced Spin Parameter}
+\subsection{Dimensionless Spin Parameter}
 
 {\bf In complete analogy to the spin parameter used to describe dark matter halos, we define the same parameter, $\lambda$, for halo pairs. This quantity combines into a single scalar the energy and the angular momentum allowing us to make an even more straightforward comparison between the results allowed for observations an the expectations in $\Lambda$CDM. The precise definition of the dimensionless $\lambda$ parameter is the following
 }
@@ -216,16 +218,16 @@ In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-li
 \lambda = \frac{\mu^{3/2} l_{\rm orb} \sqrt{e_{\rm tot}}}{G M^{5/2}}, 
 \end{equation}
 
-where the $\mu=m_{\rm M31}m_{\rm MW}/M$ is the reduced mass for the pair.
+{\bf where the $\mu=m_{\rm M31}m_{\rm MW}/M$ is the reduced mass for the pair.}
 
 
-We compare the distribution for  $\lambda$ obtained from the pair population in the Bolshoi simulation and the distribution from the MonteCrlo simulation used to estimate the uncertainties on $e_{\rm tot}$ and $l_{\rm orb}$. The results can be found in Figure \ref{fig:lambda}. The left panel shows the results from the full sample of isolated pairs while the right panel corresponds to the smaller pair sample with restrictions on the separation and total mass. 
+{\bf We compare the distribution for  $\lambda$ obtained from the pair population in the Bolshoi simulation and the distribution from the MonteCrlo simulation used to estimate the uncertainties on $e_{\rm tot}$ and $l_{\rm orb}$. The results can be found in Figure \ref{fig:lambda}. The left panel shows the results from the full sample of isolated pairs while the right panel corresponds to the smaller pair sample with restrictions on the separation and total mass. }
 
-Both panels in Figure \ref{fig:lambda} tell in a clearer way the story sketched in Figure \ref{fig:EJ} on the $e_{\rm tot}-l_{\rm orb}$ plane. The expected configuration in energy and angular momentum of the LG is slightly inconsistent with the expectation from halo pairs in $\Lambda CDM$. 
+{\bf Both panels in Figure \ref{fig:lambda} tell in a clearer way the story sketched in Figure \ref{fig:EJ} on the $e_{\rm tot}-l_{\rm orb}$ plane. The expected configuration in energy and angular momentum of the LG is slightly inconsistent with the expectation from halo pairs in $\Lambda CDM$. }
 
-In terms of the reduced spin parameter $\lambda$ seems to be lower in the LG than expected from LCDM. In the case where the pairs are restricted to have the same total mass and separation as the observational constraints, the reduced energy $e_{\rm tot }$ in the simulation are by construction in the same range as observations. The disagreement must come from the values in the reduced orbital angular momentum $j_{\rm orb}$ which is lower in the observations than the $\Lambda$CDM expectation, but still they are broadly consistent due to the large observational uncertainties.
+{\bf In terms of the reduced spin parameter $\lambda$ seems to be lower in the LG than expected from LCDM. In the case where the pairs are restricted to have the same total mass and separation as the observational constraints, the reduced energy $e_{\rm tot }$ in the simulation are by construction in the same range as observations. The disagreement must come from the values in the reduced orbital angular momentum $j_{\rm orb}$ which is lower in the observations than the $\Lambda$CDM expectation, but still they are broadly consistent due to the large observational uncertainties.}
 
-Figure \ref{fig:lambda} also shows the results from the three constrained simulations. The 
+{\bf Left panel in Figure \ref{fig:lambda} shows the results from the three constrained simulations. In this case all cases seem to be a better match to the observational expectations than to the $\Lambda$CDM pair population. In the case of tigher restrictions on the separation and total mass only one pair in the constrained simulations is retained, its $\lambda$ value matches with the maximum in the $\lambda$ distribution infered from observations.}
 
 
 \section{Conclusions}
@@ -236,17 +238,21 @@ Using the same absolute values for the uncertainty in the observed velocity comp
 
 Approximating the LG as two point masses we express the above mentioned results in terms of the orbital angular momentum $l_{\rm orb}$ and the mechanical energy $e_{\rm tot}$ per unit of reduced mass. We find that the uncertainties in the tangential velocity, the square of the norm of the velocity and the total mass in the LG produce poorer constraints on the number of simulated pairs that are consistent with the observations. Nevertheless, in the case of the LG-pair sample that also fulfills the separation and total mass criteria there is a slight tension between simulation and observation. A reduction by a factor of $2$ in the observational uncertainty on the radial velocity would clarify this issue.
 
-{\bf In the three pairs from constrained simulations we find kinematics dominated by radial velocities. However their velocity components differ from the observational constraints and their mechanical energy and orbital angular momentum are in modest concordance with observations. This conforms to the fact that the observational values do not seem to be common in a $\Lambda$CDM Universe.}
+{\bf In the three pairs from constrained simulations we find kinematics dominated by radial velocities. However their velocity components differ from the observational constraints and their mechanical energy and orbital angular momentum are in broad concordance with observations. There is only one pair that fullfills all the separation, total mass constraints and matches the most probable value for the dimensionless spin parameter $\lambda$ inferred from observations. }
 
-{\bf In this Letter we have shown that LG-like pairs in $\Lambda$CDM show prefered values for their relative velocities, angular momentum and mechanical energy. These values are in tension with the observational results. Pairs with highly radial orbits are not common in $\Lambda$CDM. This hints that the formation and evolution of the Local Group had special characteristics with respect to the average expectations in $\Lambda$CDM. Understanding the origin and implications of this result deserve further study.}
+{\bf The $\lambda$ spin parameter is itself a useful instrument to gauge the dynamical state of pairs. Reduced unceratainties in masses, distances and velocities can be included to produce an updated estimate for this parameter. This will immedialtly improve the statistical comparison between our Local Group and the expectations from $\Lambda$CDM.}
 
+{\bf In this Letter we have shown that LG-like pairs in $\Lambda$CDM show prefered values for their relative velocities, angular momentum and total mechanical energy. The values for the orbital angular momentum and energy, merged into the $\lambda$ spin parameter, are in mild disagreement with the observational constraints. However, there is a strong tension with the precise values for the radial and tangential velocities.
 
+Under the approximation of consevartion of the orbital angular momentum and mechanical energy, we see that an agreement in the total angular momentum and energy and a marked difference with the precise balance between today's radial and tangential velocities could only be explained if the initial conditions for the formation of the Local Group are special in comparison to the initial conditions of any other pair of dark matter halos in the $\Lambda$CDM cosmology. 
+
+We consider that reducing the uncertainties in the observations relevant to this study are needed. Likewise, additional theoretical work to understand the origin and implications of this result deserve further study.}
 
 \label{sec:conclusions}
 \section*{Acknowledgments}  
 J.E.F-R acknowledges financial support from the Vicerrector\'{\i}a de Investigaciones at Universidad de los Andes through its {\it Fondo de Apoyo a Profesores Asistentes} and the Peter and Patricia Gruber Foundation through its fellowship administered by the International Astronomical Union.
 
-The data and codes needed to reproduce the results of this paper can be found as a github repository {\texttt https://github.com/forero/LG\_Kinematics/}. 
+The data and source code needed to reproduce the results of this paper can be found as a github repository {\texttt https://github.com/forero/LG\_Kinematics/}. 
 
 \bibliographystyle{apj}
 \bibliography{references} 
