@@ -2,7 +2,7 @@
 \submitted{{\it Submitted for publication in ApJ Letters}}
 \usepackage{multirow,color,wrapfig,ulem}
 \usepackage {graphicx}
-\bibliographystyle{apj}
+%\bibliographystyle{apj}
 \usepackage{graphics}
 \usepackage[dvips]{epsfig}
 
@@ -35,7 +35,6 @@
 \def\simgt{\mathrel{\spose{\lower 3pt\hbox{$\mathchar"218$}}
      \raise 2.0pt\hbox{$\mathchar"13E$}}}
 \font\smcap=cmcsc10
-\def\caii{Ca\,{\smcap ii}}
 
 
 \shorttitle{Local Group Kinematics}
@@ -46,7 +45,7 @@
 \author{
 J. E.\ Forero-Romero\altaffilmark{1}, 
 Y. Hoffman\altaffilmark{2}, 
-S.  Bustamante\altaffilmark{3}, 
+S. Bustamante\altaffilmark{3}, 
 S. Gottl\"ober\altaffilmark{4}, 
 G. Yepes\altaffilmark{5}
 }
@@ -62,7 +61,7 @@ Cantoblanco E-280049, Spain}
 
 \begin{abstract}
    
-Recent observations constrained the tangential velocity of M31 with respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume high resolution N-body cosmological simulation to statistically study this kinematics in the context of the $\Lambda$CDM cosmology. We define the Local Group (LG) to be composed by two dominant separate halos hosting the MW and the M31 galaxy fulfilling certain isolation criteria. We find that the most probable values for the tangential and radial velocities in these pairs are $v_{\rm rad, \Lambda CDM}=-65\pm 5$\kms and $v_{\rm tan, \Lambda CDM}=62\pm 5$\kms. Within a similar absolute uncertainty defined by observations the pairs centered around these values are $\sim5$ times more abundant than the pairs in the observational interval. Furthermore, we find that only $\sim8\%$ of the pairs show a ratio between its tangential and radial velocity consistent with observations. {\bf This tension increases if we make a narrower selection in the pair sample to match the observational constraints on pair separation and total mass. Expressing these results in terms of the angular momentum and mechanical energy per unit mass also reflects this disagreement albeit in a less strong fashion due to the larger uncertainties inferred for these physical quantities. From these quantities we define a reduced spin parameter and use it to easily characterize the LG with repect to other halo pairs in $\Lambda$CDM. We also include in our analysis results from constrained simulations and cosmic web charachterization techniques. The results of this study suggest that the formation and evolution of the LG differ from the average $\Lambda$CDM halo pair.}
+Recent observations constrained the tangential velocity of M31 with respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume high resolution N-body cosmological simulation to statistically study this kinematics in the context of the $\Lambda$CDM cosmology. We define the Local Group (LG) to be composed by two dominant separate halos hosting the MW and the M31 galaxy fulfilling certain isolation criteria. We find that the most probable values for the tangential and radial velocities in these pairs are $v_{\rm rad, \Lambda CDM}=-65\pm 5$\kms and $v_{\rm tan, \Lambda CDM}=62\pm 5$\kms. Within a similar absolute uncertainty defined by observations the pairs centered around these values are $\sim5$ times more abundant than the pairs in the observational interval. Furthermore, we find that only $\sim8\%$ of the pairs show a ratio between its tangential and radial velocity consistent with observations. This tension increases if we make a narrower selection in the pair sample to match the observational constraints on pair separation and total mass. Expressing these results in terms of the angular momentum and mechanical energy per unit mass also reflects this disagreement albeit in a less strong fashion due to the larger uncertainties inferred for these physical quantities. From these quantities Peeble's spin parameter is evaluated and is used to characterize the LG with repect to other halo pairs in $\Lambda$CDM. We also include in our analysis results from constrained simulations. The characterisation results of this study suggest that the formation and evolution of the LG differ from the average $\Lambda$CDM halo pair.
 \end{abstract}
 
 \begin{keywords}
@@ -73,7 +72,7 @@ Recent observations constrained the tangential velocity of M31 with respect to t
 
 The Milky Way (MW) and Andromeda galaxy (M31) are the dominant galaxies in the Local Group (LG). Astronomical observations of their mass distribution impose constraints on the standard cosmological model. The satellite overabundance problem \citep{Klypin99,Moore99}, tidal disruption features \citep{pandas09} and the disk dominated morphology \citep{Kazantzidis2008} are examples on of how LG studies are linked to the cosmological context. Detailed studies on the Magellanic Clouds dynamics and their possible link to M31 add to the interest of understanding the details of the LG kinematics and dynamics \citep{Besla2007,Tollerud2011,Knebe2011,Fouquet2012,Teyssier2012}. However, a general concern in the use of the LG as a tool for near-field cosmology \citep{Freeman2002,Peebles2010} is how typical is the LG regarding the properties of interest \citep{Liu2011,ForeroRomero2011,Purcell2012}. 
 
-A new valuable piece of information in this issue is the recent observational determination of the proper-motion measurements of M31, which until recently had been out of reach \citep{vanderMarel12}. This measurement opens up the possibility to study in detail the dynamics of the LG in a cosmological context. The reported measurements set an upper bound for the tangential velocity of M31 with respect to the MW of $v_{\rm tan,M31}\leq 32$ km s$^{-1}$. Together with the values of the relative radial velocity of $v_{\rm rad,M31}=-109\pm 4.4$ \kms observations show that the relative motion of the MW and Andromeda is consistent with a head-on collision. With this information it is possible to ask how common is this kinematic configuration in a $\Lambda$CDM Universe.
+A new valuable piece of information in this issue is the recent observational determination of the proper-motion measurements of M31, which until recently had been out of reach \citep{vanderMarel12}. This measurement opens up the possibility to study in detail the dynamics of the LG in a cosmological context. The reported measurements set an upper bound for the tangential velocity of M31 with respect to the MW of $v_{\rm tan,M31}\leq 34.4$ km s$^{-1}$. Together with the values of the relative radial velocity of $v_{\rm rad,M31}=-109\pm 4.4$ \kms observations show that the relative motion of the MW and Andromeda is consistent with a head-on collision. With this information it is possible to ask how common is this kinematic configuration in a $\Lambda$CDM Universe.
 
 This Letter presents such study. We use a large volume, high resolution dark matter only N-body simulation in the concordance $\Lambda$CDM cosmology to find a set of halo pairs with similar isolation criteria as inferred in the LG. We quantify these results in terms of the number of pairs with given radial and tangential velocities in the galactocentric rest frame. We also find the pairs that are consistent with a head on collision in terms of the ratio of the radial to tangential velocity $f_{\rm t}\equiv v_{\rm tan}/v_{\rm rad}<0.3$ and present these results in terms of the reduced angular momentum and mechanical energy.
 
@@ -100,11 +99,17 @@ This Letter is structured as follows. In the next section we present the N-body 
 
 
 
-The Bolshoi simulation follows the non-linear evolution of the dark matter density field using N-body techniques. The simulation has a cubic volume of $250$\hMpc comoving on a side, sampled with $2048^{3}$ particles. The cosmological parameters used in the simulation are $\Omega_{m}=0.27, \Omega_{\Lambda}=0.73, \sigma_{8}=0.82, h=0.70$ and $n=0.95$, corresponding to the matter density, vacuum energy density, the normalization of the power spectrum, the reduced Hubble constant and the index of the slope in the initial power spectrum. This set of parameter is compatible with the analysis  of the seventh year of data from the Wilkinson Microwave Anisotropy Probe (WMAP) \citep{Jarosik2011}. A detailed description of this simulation can be found in \citep{Bolshoi}.
+The Bolshoi simulation follows the non-linear evolution of the dark matter density field using N-body techniques. The simulation has a cubic volume of $250$\hMpc comoving on a side, sampled with $2048^{3}$ particles. The cosmological parameters used in the simulation are $\Omega_{m}=0.27, \Omega_{\Lambda}=0.73, \sigma_{8}=0.82, h=0.70$ and $n=0.95$, corresponding to the matter density, vacuum energy density, the normalization of the power spectrum, the dimensionless Hubble constant and the index of the slope in the initial power spectrum. This set of parameters is compatible with the analysis  of the seventh year of data from the Wilkinson Microwave Anisotropy Probe (WMAP) \citep{Jarosik2011}. A detailed description of this simulation can be found in \citep{Bolshoi}.
 
-With these parameters the mass per particle is $m_{p}=1.4\times 10^{8}$\hMsun. In this paper we use the halos obtained through a FOF algorithm with a linking length $0.17$ times the average interparticle distance. We have obtained the data through the public available Multidark database \footnote{{\tt http://www.multidark.org/MultiDark/}} \citep{2011arXiv1109.0003R}. The database allows us to obtain the comoving positions, peculiar velocities and masses for all the halos in the simulation volume at $z=0$. The Hubble flow is taken into account to convert the relative velocities into physical velocities and allow for a comparison with observations.
+With these parameters the mass per particle is $m_{p}=1.4\times 10^{8}$\hMsun. {\bf  In this paper we use algorithms obtained through the Bound Density Maxima (BDM) algorithm.}
 
-The constrained simulations we use in this Letter are part of the Constrained Local UniversE Simulations (CLUES) project whose main objective is to reproduce the large scale structure in the Local Universe as accurately as observations permit. The algorithm and observational constraints to construct the initial conditions are described in \citep{clues2010}.  We use three dark matter only simulations, each has a cubic volume of $64$\hMpc on a side, with the density field sampled with $1024^3$ particles. The cosmological density parameter is $\Omega_m=0.28$, the cosmological constant $\Omega_{\Lambda}=0.72$, the dimensionless Hubble parameter $h=0.73$, the spectral index of the primordial density perturbations $n=0.96$ and the power spectrum normalization $\sigma_{8}=0.817$, also consistent with WMAP 7th year data. The halo catalogs are constructed with the same FOF code used on the Bolshoi Simulation.
+
+In this paper we use the halos obtained through a FOF algorithm with a linking length $0.17$ times the average interparticle distance. We have obtained the data through the public available Multidark database \footnote{{\tt http://www.multidark.org/MultiDark/}} \citep{2011arXiv1109.0003R}. The database allows us to obtain the comoving positions, peculiar velocities and masses for all the halos in the simulation volume at $z=0$. The Hubble flow is taken into account to convert the relative velocities into physical velocities and allow for a comparison with observations.
+
+The constrained simulations we use in this Letter are part of the Constrained Local UniversE Simulations (CLUES) project whose main objective is to reproduce the large scale structure in the Local Universe as accurately as observations permit. The algorithm and observational constraints to construct the initial conditions are
+SG  I think the observations are much more accurate than our reconstructions, so it would be better to replace 
+ ``observations permit.''  by ``possible.'', which includes both the limitations of the observations and the reconstraction algorithm.
+ described in \citep{clues2010}.  We use three dark matter only simulations, each has a cubic volume of $64$\hMpc on a side, with the density field sampled with $1024^3$ particles. The cosmological density parameter is $\Omega_m=0.28$, the cosmological constant $\Omega_{\Lambda}=0.72$, the dimensionless Hubble parameter $h=0.73$, the spectral index of the primordial density perturbations $n=0.96$ and the power spectrum normalization $\sigma_{8}=0.817$, also consistent with WMAP 7th year data. The halo catalogs are constructed with the same FOF code used on the Bolshoi Simulation.
 
 \subsection{The LG-sample}
 Based on the FOF catalogs in the Bolshoi simulation we construct a halo pairs sample with masses and isolation properties consistent with the inferred properties for the MW and M31. The characteristics we impose to define a LG-like halo pair are the following:
@@ -115,10 +120,14 @@ Based on the FOF catalogs in the Bolshoi simulation we construct a halo pairs sa
 \item The relative radial velocity between the two halos is negative \citep{vanderMarel12}.
 \item The distance between the center of mass of the halos must be less than $0.7$\hMpc \citep{ribas05,vanderMarel08}.
 \item There cannot be halos more massive than $5\times 10^{12}$\hMsun within a radius of $2$\hMpc with respect to every object centre \citep{Karachentsev04,Anton09}.
-\item There cannot be halos more massive than $5\times 10^{13}$\hMsun with  a radius of $3$\hMpc with respect to every object centre \citep{Karachentsev04}.
+\item There cannot be halos more massive than $5\times 10^{13}$\hMsun with  a radius of $3$\hMpc with
+SG    within a radius of
+ respect to every object centre \citep{Karachentsev04}.
 \end{enumerate}
 
-This sample in the Bolshoi simulation has $1256$ pairs. This is $\sim 30\%$ smaller than the the number of pairs we found in \cite{ForeroRomero2011}, which did not include the condition 5) in the construction of the sample. Additionally, there is a sample of three (3) pairs constructed from the three constrained realizations. These pairs fulfill all the above mentioned conditions and additionally are located in a place with the right distances with respect to the Virgo and Coma clusters in the simulation. Figure \ref{fig:distros} show the distribution of separations and total pair mass computed from the $1256$ pairs in the Bolshoi simulation. 
+This sample in the Bolshoi simulation has $1256$ pairs. This is $\sim 30\%$ smaller than the the number of pairs we found in \cite{ForeroRomero2011}, which did not include the condition 5) in the construction of the sample. Additionally, there is a sample of three (3) pairs constructed from the three constrained realizations. These pairs fulfill all the above mentioned conditions and additionally are located in a place with the right distances with respect to the Virgo and Coma clusters in the simulation. Figure \ref{fig:distros} show the
+SG    Coma is outside of the 64 Mpc/h box
+ distribution of separations and total pair mass computed from the $1256$ pairs in the Bolshoi simulation. 
 
 {\bf Additional constraints will be set on this population in order to match the observational estimates for separation and total mass. The full observational characteristics that we take in this Letter for the MW-M31 pair are listed in Table \ref{table:1}.}
 
@@ -166,7 +175,9 @@ The right panel in Figure \ref{fig:rt} shows the results of making narrower sele
 \begin{center}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt.pdf}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_narrow.pdf}
-\caption{Histograms of the radial and tangential velocities for LG-like halo pairs in the Bolshoi simulation. The left panel corresponds to the general LG-like pair simple, the right panel corresponds to the subsample with cuts on pair separation and total mass, matching the observational constraints. The squared panel shows as a shaded histogram the number of pairs on the radial and tangential velocities plane. The rectangular panels show the histograms when only one of the velocity components is used to bin the data. The half ellipsoid corresponds to the observed observational constraints for M31 in the Galactocentric rest frame: $v_{\rm rad}=109.2\pm 4.4$ km s$^{11}$ and $v_{\rm tan}< 34.3$ km s$^{-1}$ \citep{vanderMarel12}. The circles represent the positions of the pairs from the constrained simulations. The highest number density in the plot is obtained around $v_{\rm rad,\Lambda CDM} = 65\pm5$ \kms, $v_{\rm tan,\Lambda CDM} = 62\pm5$ \kms}
+\caption{Histograms of the radial and tangential velocities for LG-like halo pairs in the Bolshoi simulation. The left panel corresponds to the general LG-like pair simple, the right panel corresponds to the subsample with cuts on pair separation and total mass, matching the observational constraints. The squared panel shows as a shaded histogram the number of pairs on the radial and tangential velocities plane. The rectangular panels show the histograms when only one of the velocity components is used to bin the data. The half ellipsoid
+SG ellipse  -- ellipsoid is 3D or higher dim
+ corresponds to the observed observational constraints for M31 in the Galactocentric rest frame: $v_{\rm rad}=109.2\pm 4.4$ km s$^{11}$ and $v_{\rm tan}< 34.3$ km s$^{-1}$ \citep{vanderMarel12}. The circles represent the positions of the pairs from the constrained simulations. The highest number density in the plot is obtained around $v_{\rm rad,\Lambda CDM} = 65\pm5$ \kms, $v_{\rm tan,\Lambda CDM} = 62\pm5$ \kms}
 \label{fig:rt}
 \end{center}
 
@@ -178,7 +189,10 @@ The right panel in Figure \ref{fig:rt} shows the results of making narrower sele
 \begin{center}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ.pdf}
 \includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_narrow.pdf}
-\caption{Histograms of the orbital angular momentum ($l_{\rm orb}$) and mechanical energy ($e_{\rm tot}$) per unit of reduced mass calculated considering the halos as point masses. The panel distribution is the same as in Figure \ref{fig:rt}. The contour line shows the $1-\sigma$ uncertainty estimated through Monte Carlo techniques from the observational values summarized in Table 1. The poorer constraints on this plane are due to the added uncertainties on the tangential velocity ($100\%$), the square of the norm of the velocity ($40\%$) and the total mass of the two halos ($20\%$). }
+\caption{Histograms of the orbital angular momentum ($l_{\rm orb}$) and mechanical energy ($e_{\rm tot}$) per unit of reduced mass calculated considering the halos as point masses. The panel distribution is the same as in Figure \ref{fig:rt}. The contour line shows the $1-\sigma$ uncertainty estimated through Monte Carlo techniques from the observational values summarized in Table 1. The poorer constraints on this plane are due
+SG  poorer than what? it is explained in the text, but for clarity I would prefer something like
+The constraints in this plot are less restrictive than in Fig. 2 because we have added ......
+ to the added uncertainties on the tangential velocity ($100\%$), the square of the norm of the velocity ($40\%$) and the total mass of the two halos ($20\%$). }
 \label{fig:EJ}
 \end{center}
 \end{figure*}
@@ -194,7 +208,11 @@ In Table \ref{table:1} we list the M31 position (${\bf r}_{\rm M31}$), M31 veloc
 
 The results are summarized in Figure \ref{fig:EJ} following the same plotting conventions from Figure \ref{fig:rt}. The closed line is the iso-density contour in the 2D histogram enclosing $68\%$ of the Monte Carlo generated pairs consistent with observations. The poor observational constraints on the $e_{\rm tot}-l_{\rm orb}$ plane in comparison to the radial-tangential velocity plane comes from the fact that we are adding up large uncertainties in three different aspects. First, the tangential velocity has a $100\%$ uncertainty, making the angular momentum compatible with very low and high values. Second, the uncertainty on the square of the norm of the velocity has an uncertainty of $40\%$, having an impact on the kinetic energy. Third, the uncertainty in the total mass of the Local Group is close to $20\%$, which has an impact on the potential energy. 
 
-In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-like pairs to have similar separation and total mass makes them occupy a narrower region. This shows that there are preferred values for $e_{\rm tot}-l_{\rm orb}$. Under the assumption of quasi-conserved quantity it means that their formation and evolution conditions must be similar. In this case the agreement with observations is moderate. A reduction by a factor of $2$ in the uncertainty of the tangential velocity showing that the tangential velocity is below $17$\kms would clearly bring the observations in the region of low $l_{\rm orb}$, clearly below the average $\Lambda$CDM expectation.
+In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-like pairs to have similar separation
+SG I think better saying more precise, i.e.   ``that further reduction of the LG-like pairs following the procedure decribed for the right panel of Fig.2  makes them occupy a narrower region in the total energy.'' 
+ and total mass makes them occupy a narrower region. This shows that there are preferred values for $e_{\rm
+SG I don't see this, looks like only e_tot is more constrained but not l_orb.
+ tot}-l_{\rm orb}$. Under the assumption of quasi-conserved quantity it means that their formation and evolution conditions must be similar. In this case the agreement with observations is moderate. A reduction by a factor of $2$ in the uncertainty of the tangential velocity showing that the tangential velocity is below $17$\kms would clearly bring the observations in the region of low $l_{\rm orb}$, clearly below the average $\Lambda$CDM expectation.
 
 
 \begin{figure*}
@@ -211,7 +229,11 @@ In the right panel of Figure \ref{fig:EJ} we see that further selection of LG-li
 
 \subsection{Dimensionless Spin Parameter}
 
-{\bf In complete analogy to the spin parameter used to describe dark matter halos, we define the same parameter, $\lambda$, for halo pairs. This quantity combines into a single scalar the energy and the angular momentum allowing us to make an even more straightforward comparison between the results allowed for observations an the expectations in $\Lambda$CDM. The precise definition of the dimensionless $\lambda$ parameter is the following
+{\bf In complete analogy to the spin parameter used to describe dark matter halos, we define the same
+SG remove ``complete'',  there is an analogy but not a complete or incomplete analogy 
+ parameter, $\lambda$, for halo pairs. This quantity combines into a single scalar the energy and the angular momentum allowing us to make an even more straightforward comparison between the results allowed for observations an the expectations in $\Lambda$CDM. The precise definition of the
+SG remove ``precise'',  an unprecise definition would be not a definition
+ dimensionless $\lambda$ parameter is the following
 }
 
 \begin{equation}
@@ -240,7 +262,9 @@ Approximating the LG as two point masses we express the above mentioned results 
 
 {\bf In the three pairs from constrained simulations we find kinematics dominated by radial velocities. However their velocity components differ from the observational constraints and their mechanical energy and orbital angular momentum are in broad concordance with observations. There is only one pair that fullfills all the separation, total mass constraints and matches the most probable value for the dimensionless spin parameter $\lambda$ inferred from observations. }
 
-{\bf The $\lambda$ spin parameter is itself a useful instrument to gauge the dynamical state of pairs. Reduced unceratainties in masses, distances and velocities can be included to produce an updated estimate for this parameter. This will immedialtly improve the statistical comparison between our Local Group and the expectations from $\Lambda$CDM.}
+{\bf The $\lambda$ spin parameter is itself a useful instrument to gauge the dynamical state of pairs. Reduced unceratainties in masses, distances and velocities can be included to produce an updated
+SG uncertainties
+ estimate for this parameter. This will immedialtly improve the statistical comparison between our Local Group and the expectations from $\Lambda$CDM.}
 
 {\bf In this Letter we have shown that LG-like pairs in $\Lambda$CDM show prefered values for their relative velocities, angular momentum and total mechanical energy. The values for the orbital angular momentum and energy, merged into the $\lambda$ spin parameter, are in mild disagreement with the observational constraints. However, there is a strong tension with the precise values for the radial and tangential velocities.
 
@@ -253,6 +277,9 @@ We consider that reducing the uncertainties in the observations relevant to this
 J.E.F-R acknowledges financial support from the Vicerrector\'{\i}a de Investigaciones at Universidad de los Andes through its {\it Fondo de Apoyo a Profesores Asistentes} and the Peter and Patricia Gruber Foundation through its fellowship administered by the International Astronomical Union.
 
 The data and source code needed to reproduce the results of this paper can be found as a github repository {\texttt https://github.com/forero/LG\_Kinematics/}. 
+
+SG: Please add the sentence form the multidark database page:
+The MultiDark Database used in this paper and the web application providing online access to it were constructed as part of the activities of the German Astrophysical Virtual Observatory as result of a collaboration between the Leibniz-Institute for Astrophysics Potsdam (AIP) and the Spanish MultiDark Consolider Project CSD2009-00064. The Bolshoi simulation was run on the NASA's Pleiades supercomputer at the NASA Ames Research Center.
 
 \bibliographystyle{apj}
 \bibliography{references} 
