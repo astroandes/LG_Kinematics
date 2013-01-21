@@ -89,7 +89,8 @@ def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], clues_label='',xli
 
     if clues.size:
         axTemperature.scatter(clues[:,0], clues[:,1], color='white', edgecolors='black', s=200, label=clues_label)        
-        axTemperature.legend(loc=0, scatterpoints=1, fontsize=20)
+#        axTemperature.legend(loc=0, scatterpoints=1, fontsize=20)
+        axTemperature.legend(loc=0, scatterpoints=1, prop={'size':20})
 
     if X_field.size:
         print 'HOLA'
