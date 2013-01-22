@@ -13,6 +13,8 @@ def ellipse(ra,rb,ang,xcenter,ycenter):
     Y = rb*sin(theta_bins) + ycenter
     return X,Y
 
+#this function is defined was initially written by Jessica Kirkpatrick here:
+# http://jessresearch.blogspot.com/2012/04/pretty-plots-2d-histogram-with-1d.html
 def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], clues_label='',xlims=-99, ylims =-99 , \
                               nxbins = 50,nybins=50, bw=0, nbins=100,contours=1,sigma=1,line=1, 
                           xlabel='A', ylabel='B', mean_obs=0, sigma_obs=0, 
