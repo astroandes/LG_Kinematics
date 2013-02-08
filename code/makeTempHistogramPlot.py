@@ -70,7 +70,7 @@ def MakeTempHistogramPlot(xdata,ydata,filename=None,clues=[], clues_label='',xli
 
     # Make the 'main' temperature plot
     xbins = linspace(start = xmin, stop = xmax, num = nxbins)
-    ybins = linspace(start = ymin, stop = ymax, num = nybins)
+    ybins = linspace(start = ymin, stop = ymax, num = nybins) 
     xcenter = (xbins[0:-1]+xbins[1:])/2.0
     ycenter = (ybins[0:-1]+ybins[1:])/2.0
     aspectratio = 1.0*(xmax - xmin)/(1.0*ymax - ymin)
