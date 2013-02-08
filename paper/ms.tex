@@ -64,34 +64,39 @@ Cantoblanco E-280049, Spain}
 \date{\today}
 
 \begin{abstract}
-   
 Recent observations constrained the tangential velocity of M31 with
 respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and
 the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm
 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume
-high resolution N-body cosmological simulation to statistically study
-this kinematics in the context of the $\Lambda$CDM cosmology. We
-define the Local Group (LG) to be composed by two dominant separate
-halos hosting the MW and the M31 galaxy fulfilling certain isolation
-criteria. We find that the most probable values for the tangential and
-radial velocities in these pairs are $v_{\rm rad, \Lambda CDM}=-60\pm
-15$\kms and $v_{\rm tan, \Lambda CDM}=50\pm 5$\kms. Within a similar
-absolute uncertainty defined by observations the pairs centered around
-these values are $\sim3$ times more abundant than the pairs in the
-observational interval. Furthermore, we find that only $\sim12\%$ of
-the pairs show a ratio between its tangential and radial velocity
-consistent with observations. This tension increases if we make a
-narrower selection in the pair sample to match the observational
-constraints on pair separation and total mass. Expressing these
-results in terms of the angular momentum and mechanical energy per
-unit mass also reflects this disagreement albeit in a less strong
-fashion due to the larger uncertainties inferred for these physical
-quantities. From these quantities Peeble's spin parameter is evaluated
-and is used to characterize the LG with repect to other halo pairs in
-$\Lambda$CDM. We also include in our analysis results from constrained
-simulations. The characterisation results of this study suggest that
-the formation and evolution of the LG differ from the average
-$\Lambda$CDM halo pair. 
+high resolution N-body cosmologicalsimulation (BOLSHOI) to
+statistically study this kinematics in the context of the $\Lambda$CDM
+cosmology and three constrained simulations designed to reproduce the
+Local Group (LG) and the local cosmic neighborhood. A LG is defined
+here as  composed by two dominant separate halos hosting the MW and
+the M31 galaxy fulfilling certain isolation criteria. An ensemble  of
+all BOLSHOI pairs fulfilling this selection is constructed, and also a
+subsample of it which obeys  more stringent observational constraints
+on the mass and separation of of the MW and M31 (hereafter the full-
+and sub- samples). The comparison of the ensembles of simulated pairs
+with the observed LG has been done with respect to the observed radial
+and tangential,  the reduced orbital energy ($e$) and angular momentum
+($l$) of the LG, and with respect to the dimensionless spin parameter,
+$\lambda$. Our main results are: 
+%
+%
+% Jaime here I suggest to give in a very brief way the numbers of Table 2 that I have suggested.
+%
+The three constrained LGs are more consistent with the unconstrained
+sample of LGs rather then with the observed LG. 
+
+It follows that the quasi-conserved quantities quantities that
+characterize the orbit of the LG, i.e. $e$, $l$ and $\lambda$, do not
+challenge the standard $\Lambda$CDM model, but that model is in
+tension with regard to the particular phase on the orbit of the LG,
+namely the actual values of the radial and tangential velocities. This
+might hint to a problem of the $\Lambda$ CDM model to reproduce the
+observed LG.  
+
 \end{abstract}
 
 \begin{keywords}
@@ -269,39 +274,90 @@ separation of the two main halos. These amount to:
 \item The total mass of the two halos is in the range $1-4\times 10^{12}$\Msun \citep{vanderMarel12}.
 \end{enumerate}
 
-Note that only one constrained LG-like object is included in the subsample.
+Including these conditions the full pair sample is reduced from $1923$
+to $158$ pairs. Note that only one constrained LG-like object is
+included in the subsample. 
 
 
 \begin{table}
-\caption{Summary of the kinematic properties for M31 in the galactocentric frame as reported by \citep{vanderMarel12}. Values in parenthesis correspond to vector components. $\sigma_{\bf x}$ represents the uncertainty on the components of vector ${\bf x}$}
+\caption{Summary of observational constraints. The kinematic
+  properties for M31 are reported in the galactocentric
+  \citep{vanderMarel12}. Values in parenthesis correspond to vector
+  components. $\sigma_{\bf x}$ represents the uncertainty on the
+  components of vector ${\bf x}$. The values for the individual halo
+masses are consistent with the priors used by \cite{vanderMarel12}.}
 \begin{center}
-\begin{tabular}{ccc}\hline\hline
+\begin{tabular}{ccc}\hline
+$v_{\rm M31,rad}$ &(\kms) & $-109.3\pm 4.4$\\
+$v_{\rm M31,tan}$ &(\kms) & $<34.4$\\
+$r_{\rm M31}$ &(kpc) & $770\pm 40$\\
 ${\bf r}_{\rm M31}$ & (kpc) &$(-378.9, 612.7, -283.1)$\\
 $\sigma_{{\bf r}, {\rm M31}}$ & (kpc) &$(-18.9, 30.6, 14.5)$\\
 ${\bf v}_{\rm M31}$ & (\kms) & $(66.1, -76.3, 45.1)$\\
 $\sigma_{{\bf v},{\rm M31}}$ & (\kms) &$(26.7, 19.0, 26.5)$\\
-$v_{\rm M31,rad}$ &(\kms) & $-109.3\pm 4.4$\\
-$v_{\rm M31,tan}$ &(\kms) & $<34.4$\\
-$r_{\rm M31}$ &(kpc) & $770\pm 40$\\
 $M_{\rm 200, MW}$ & ($10^{12}\Msun$) & $1.6\pm0.5$ \\
 $M_{\rm 200, M31}$ & ($10^{12}\Msun$) & $1.6\pm0.5$ \\
-$M_{\rm 200,MW} + M_{\rm 200, M31}$ & ($10^{12}\Msun$) & $3.14\pm 0.58$\\\hline
-
+$M_{\rm 200,MW} + M_{\rm 200, M31}$ & ($10^{12}\Msun$) & $3.14\pm 0.58$\\
+$\log_{10}\lambda$& & $-1.72\pm 0.07$ \\\hline
 \end{tabular}\\
+\end{center}
+\vspace{1mm}
+Note: the observational uncertainties in the position vector
+correspond to a $5\%$ in each component consistent with the
+uncertainties in the distance \citep[see references
+  in][]{vanderMarel08}.
+Note: the value for $\log_{10}\lambda$ is obtained in this Letter
+from a Monte Carlo simulation as described in Section XX.
+\label{table:1}
+\end{table}
+
+
+\begin{table}
+\caption{Summary of results from $\Lambda$CDM.}
+\begin{center}
+\begin{tabular}{cccc}\hline
+ &  & Full Sample & Reduced Sample\\
+$v_{\rm M31,rad}$ &(\kms) & $-70\pm 10$ & $-90\pm 10$\\
+$v_{\rm M31,tan}$ &(\kms) & $50\pm 10$ & $50\pm 10$\\
+$\log_{10}\lambda$& & $-1.47\pm 0.13$& \\ 
+\end{tabular}
+\end{center}
 \vspace{1mm}
 Note: the observational uncertainties in the position vector
 correspond to a $5\%$ in each component consistent with the
 uncertainties in the distance \citep[see references
   in][]{vanderMarel08} 
-\end{center}
-\label{table:1}
-\end{table}
 
+\label{table:2}
+\end{table}
 
 
 \section{Results}
 \label{sec:results}
 
+
+\begin{table*}
+\caption{Summary of the comparison against $\Lambda$CDM.}
+\begin{center}
+\begin{tabular}{ccccc}\hline
+Physical & (\%) Pairs consistent & \% Pairs consistent & \% Pairs
+consistent& (\%) Pairs consistent\\ 
+& with observations & with observations & with LCDM & with LCDM\\ 
+ & in full sample & in reduced sample & in full sample & in reduced sample\\ \hline
+$v_{\rm r}$-$v_{\rm t}$ & (0.4\%) 8/1923 & (0\%)0/158 & (1\%)23/1923 & (8\%)13/158\\
+$e_{\rm tot}$-$l_{\rm orb}$ & (15\%)298/1923 & (24\%)38/158 & - & -\\
+$\log_{10}\lambda$ & (13\%)257/1923 & (9\%)15/158 & - & -\\
+$r_{\rm t}=v_{\rm t}/v_{\rm r}$& (12\%)242/1923 & (8\%)13/158 & -& -\\
+\end{tabular}
+\end{center}
+\vspace{1mm}
+Note: the observational uncertainties in the position vector
+correspond to a $5\%$ in each component consistent with the
+uncertainties in the distance \citep[see references
+  in][]{vanderMarel08} 
+
+\label{table:2}
+\end{table*}
 
 
 
