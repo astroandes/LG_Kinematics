@@ -1,5 +1,5 @@
 from numpy import *
-def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='test.out', hubble=0.73):
+def generate_info(dmh_filename, pairs_ID_filename, output_file='test.out', hubble=0.73):
     """
     This loads the data from a FOF catalog and a list of pairs IDs. 
     From this information we calculate the distance between the pairs, 
@@ -18,7 +18,7 @@ def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='tes
     outraw = open(output_file+'.raw', 'w')
     halos_prop=loadtxt(dmh_filename) 
     iso_pairs_prop=loadtxt(pairs_ID_filename) 
-    lambda_data=loadtxt(lambda_file)
+
 
     outraw.write('# M1 M2 x1 y1 z1 x2 y2 z2 v1_x v1_y v1_z v2_x v2_y v2_z\n')
     outraw.write('# Msun Msun Mpc Mpc Mpc Mpc Mpc Mpc km/s km/s kms/ km/s km/s km/s\n')
@@ -62,14 +62,6 @@ def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='tes
         r_12 = r_2-r_1
         v_12 = v_2-v_1
         
-        #eigenvalues
-        lambda1_1 = lambda_data[id_1-1,0]
-        lambda2_1 = lambda_data[id_1-1,1]
-        lambda3_1 = lambda_data[id_1-1,2]
-
-        lambda1_2 = lambda_data[id_2-1,0]
-        lambda2_2 = lambda_data[id_2-1,1]
-        lambda3_2 = lambda_data[id_2-1,2]
 
         #relative velocity including Hubble flow
         hubble_flow = hubble*100*r_12
@@ -112,11 +104,10 @@ def generate_info(dmh_filename, pairs_ID_filename, lambda_file, output_file='tes
 
 
         if(v_radial_norm<0.0 and norm_r_12 < 1.0):
-#            print v_tan_norm, v_radial_norm, norm_v_12,lambda1_1, lambda2_1, lambda3_1, lambda1_2, lambda2_2, lambda3_2
-            out.write('%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f\n' % 
+            out.write('%f %f %f %f %f %f %f %f %f %f %f \n' % 
                       (v_radial_norm, v_tan_norm, v_cm_norm, v_1_norm, 
-                       v_2_norm, E_kin, E_pot, L_12_norm, lambda1_1, 
-                       lambda2_1, lambda3_1, lambda1_2, lambda2_2, lambda3_2, norm_r_12, total_mass, reduced_mass))
+                       v_2_norm, E_kin, E_pot, L_12_norm, 
+                       norm_r_12, total_mass, reduced_mass))
 
             outraw.write('%e %e %f %f %f %f %f %f %f %f %f %f %f %f\n' % 
                       (mass_1, mass_2, r_1[0], r_1[1], r_1[2], r_2[0], r_2[1], r_2[2],
