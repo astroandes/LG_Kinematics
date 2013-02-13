@@ -68,32 +68,28 @@ Recent observations constrained the tangential velocity of M31 with
 respect to the Milky Way (MW) to be $v_{\rm M31,tan}<34.4$ \kms and
 the radial velocity to be in the range $v_{\rm M31,rad}=-109\pm
 4.4$\kms \citep{vanderMarel12}. In this study we use a large volume
-high resolution N-body cosmologicalsimulation (BOLSHOI) to
+high resolution N-body cosmological simulation (Bolshoi) to
 statistically study this kinematics in the context of the $\Lambda$CDM
-cosmology and three constrained simulations designed to reproduce the
-Local Group (LG) and the local cosmic neighborhood. A LG is defined
-here as  composed by two dominant separate halos hosting the MW and
-the M31 galaxy fulfilling certain isolation criteria. An ensemble  of
-all BOLSHOI pairs fulfilling this selection is constructed, and also a
-subsample of it which obeys  more stringent observational constraints
-on the mass and separation of of the MW and M31. The comparison of the
+cosmology together with three constrained simulations designed to reproduce the
+Local Group (LG) and the local cosmic neighborhood. The comparison of the
 ensembles of simulated pairs with the observed LG has been done with
-respect to the observed radial and tangential,  the reduced orbital
-energy ($e$) and angular momentum ($l$) of the LG, and with respect to
-the dimensionless spin parameter, $\lambda$. Our main results are: (i)
-the prefered radial and tangential velocities for pairs in $\Lambda$CDM
-are $v_{\rm r}=-80\pm 20$, $v_{\rm t}=50\pm 10$, (ii) pairs around
-that region are $3$ to $13$ times more common than pairs within the
-observational values, (iii) $15\%$ to $24\%$ of pairs in $\Lambda$CDM have
-energy and angular momentum consistent with observations while (iv) $9\%$
-to $13\%$ of pairs in the same sample show similar values to the inferred dimensionless spin
-parameter. It follows that the quasi-conserved quantities quantities that
-characterize the orbit of the LG, i.e. $e$, $l$ and $\lambda$, do not
-challenge the standard $\Lambda$CDM model, but that model is in
-tension with regard to the particular phase on the orbit of the LG,
-namely the actual values of the radial and tangential velocities. This
-might hint to a problem of the $\Lambda$CDM model to reproduce the
-observed LG.  
+respect to the observed radial and tangential velocities, the reduced orbital
+energy ($e_{\rm tot}$) and angular momentum ($l_{\rm orb}$) of the LG,
+and the dimensionless spin parameter, $\lambda$. Our
+main results are: (i) the prefered radial and tangential velocities
+for pairs in $\Lambda$CDM are $v_{\rm r}=-80\pm 20$\kms, $v_{\rm
+  t}=50\pm 10$\kms, (ii) pairs around that region are $3$ to $13$
+times more common than pairs within the observational values, (iii)
+$15\%$ to $24\%$ of pairs in $\Lambda$CDM have energy and angular
+momentum consistent with observations while (iv) $9\%$ to $13\%$ of
+pairs in the same sample show similar values in the inferred
+dimensionless spin parameter. It follows that the quasi-conserved
+quantities quantities that characterize the orbit of the LG,
+i.e. $e_{\rm tot}$,
+$l_{\rm orb}$ and $\lambda$, do not challenge the standard $\Lambda$CDM model,
+but the model is in tension with regard to the actual values of the radial and
+tangential velocities. This might hint to a problem of the
+$\Lambda$CDM model to reproduce the observed LG.
 
 \end{abstract}
 
@@ -108,7 +104,7 @@ galaxies in the Local Group (LG). Astronomical observations of their
 mass distribution impose constraints on the standard cosmological
 model. The satellite overabundance problem \citep{Klypin99,Moore99},
 tidal disruption features \citep{pandas09} and the disk dominated
-morphology \citep{Kazantzidis2008} are examples on of how LG studies
+morphology \citep{Kazantzidis2008} are examples on how LG studies
 are linked to the cosmological context. Detailed studies on the
 Magellanic Clouds dynamics and their possible link to M31 add to the
 interest of understanding the details of the LG kinematics and
@@ -137,9 +133,9 @@ inferred in the LG. We quantify these results in terms of the number
 of pairs with given radial and tangential velocities in the
 galactocentric rest frame. We also find the pairs that are consistent
 with a head on collision in terms of the ratio of the radial to
-tangential velocity $f_{\rm t}\equiv v_{\rm tan}/v_{\rm rad}<0.3$ and
-present these results in terms of the reduced angular momentum and
-mechanical energy. 
+tangential velocity $f_{\rm t}\equiv v_{\rm tan}/v_{\rm rad}<0.32$ and
+present these results in terms of the reduced angular momentum,
+mechanical energy and dimensionless spin parameter.
 
 In addition we make use of three  constrained N-body simulations which
 are constructed to reproduce the observed large scale structure of the
@@ -161,16 +157,16 @@ results in the context of the $\Lambda$CDM model.
 
 
 
-\label{subsec:lg-sample}
-\begin{figure*}
-\begin{center}
-\includegraphics[keepaspectratio=true,width=0.45\textwidth]{./figures/separation_BDM.pdf}
-\includegraphics[keepaspectratio=true,width=0.45\textwidth]{./figures/total_mass_BDM.pdf}
-\caption{\label{fig:distros} Distributions of separations and total
-  halo mass (Milky Way and M31) in the LG-like pairs selected from the
-  Bolshoi Simulation.} 
-\end{center}
-\end{figure*}
+%\label{subsec:lg-sample}
+%\begin{figure*}
+%\begin{center}
+%\includegraphics[keepaspectratio=true,width=0.45\textwidth]{./figures/separation_BDM.pdf}
+%\includegraphics[keepaspectratio=true,width=0.45\textwidth]{./figures/total_mass_BDM.pdf}
+%\caption{\label{fig:distros} Distributions of separations and total
+%  halo mass (Milky Way and M31) in the LG-like pairs selected from the
+%  Bolshoi Simulation.} 
+%\end{center}
+%\end{figure*}
 
 \section{Simulation and Environment}
 \label{sec:methods}
@@ -192,7 +188,7 @@ the seventh year of data from the Wilkinson Microwave Anisotropy Probe
 can be found in \citep{Bolshoi}. 
 
 With these parameters the mass per particle is $m_{p}=1.4\times
-10^{8}$\hMsun. In this paper we use algorithms obtained through the
+10^{8}$\hMsun. In this paper we use halos obtained through the
 Bound Density Maxima (BDM) algorithm \citep{KlypinBDM}. The halos are
 selected to have an overdensity of 200 times the critical
 density. Furthermore, we only include in the analysis haloes whose
@@ -232,21 +228,21 @@ of  the MW and M31. The  criteria  we impose to define a LG-like halo
 pair are the following: 
 
 \begin{enumerate}
-\item Each halo has a mass in the range $5\times10^{11}\hMsun
-  <M_{h}<5\times 10^{12}\hMsun$. 
+\item Each halo has a mass in the range $7\times10^{11}\Msun
+  <M_{h}<7\times 10^{12}\Msun$. 
 \item With respect to each halo, there cannot be any other halo within
-  the mass range $5\times10^{11}\hMsun <M_{h}<5\times 10^{12}\hMsun$
+  the mass range $7\times10^{11}\Msun <M_{h}<7\times 10^{12}\Msun$
   closer than its partner. It means that there cannot be ambiguity on
   the identity of the pair members. 
 \item The relative radial velocity between the two halos is negative
   \citep{vanderMarel12}. 
 \item The distance between the center of mass of the halos must be
-  less than $0.7$\hMpc \citep{ribas05,vanderMarel08}. 
-\item There cannot be halos more massive than $5\times 10^{12}$\hMsun
-  within a radius of $2$\hMpc with respect to every object centre
+  less than $1.0$Mpc \citep{ribas05,vanderMarel08}. 
+\item There cannot be halos more massive than $7\times 10^{12}$\Msun
+  within a radius of $3$Mpc with respect to every object centre
   \citep{Karachentsev04,Anton09}. 
-\item There cannot be halos more massive than $5\times 10^{13}$\hMsun
-  within  a radius of $3$\hMpc with respect to every object centre
+\item There cannot be halos more massive than $7\times 10^{13}$\Msun
+  within  a radius of $4$Mpc with respect to every object centre
   \citep{Karachentsev04}. 
 \end{enumerate}
 
@@ -257,33 +253,34 @@ This sample in the Bolshoi simulation has $1923$ pairs. Additionally,
 there is a sample of three (3) pairs constructed from the three
 constrained realizations. These pairs fulfill all the above mentioned
 conditions and additionally are located in a place with the right
-distances with respect to the Virgo cluster in the simulation. Figure
-\ref{fig:distros} show the  distribution of separations and total pair
-mass computed from the $1923$ pairs in the Bolshoi simulation.  
+distances with respect to the Virgo cluster in the simulation. 
+%Figure
+%\ref{fig:distros} show the  distribution of separations and total pair
+%mass computed from the $1923$ pairs in the Bolshoi
+%simulation. 
+Throughout this Letter werefer to this sample as the full
+sample. 
 
 
 The full observational characteristics that we take in this Letter for
 the MW-M31 pair are listed in Table \ref{table:1}.  
-A more restrictive subsample of LG-like objects has been constructed
+A more reduced sample from the full sample has been constructed
 so as to fit obey the observational bounds on the masses and
 separation of the two main halos. These amount to:   
 \begin{enumerate}
-\item The separation between the center of mass of the halos is in the range $700-800$kpc \citep{ribas05,vanderMarel08}.
-\item The total mass of the two halos is in the range $1-4\times 10^{12}$\Msun \citep{vanderMarel12}.
+\item The separation between the center of mass of the halos is in the
+  range $700-800$kpc \citep{ribas05,vanderMarel08}. 
+\item The total mass of the two halos is in the range $1-4\times
+  10^{12}$\Msun \citep{vanderMarel12}. 
 \end{enumerate}
 
-Including these conditions the full pair sample is reduced from $1923$
-to $158$ pairs. Note that only one constrained LG-like object is
-included in the subsample. 
+Including these conditions the full sample is reduced from $1923$
+to $158$ pairs. We refer to this sample as the reduced sample. Note
+that only one constrained LG-like object is included in this subset.
 
 
 \begin{table}
-\caption{Summary of observational constraints. The kinematic
-  properties for M31 are reported in the galactocentric
-  \citep{vanderMarel12}. Values in parenthesis correspond to vector
-  components. $\sigma_{\bf x}$ represents the uncertainty on the
-  components of vector ${\bf x}$. The values for the individual halo
-masses are consistent with the priors used by \cite{vanderMarel12}.}
+\caption{Summary of observational constraints.}
 \begin{center}
 \begin{tabular}{ccc}\hline
 $v_{\rm M31,rad}$ &(\kms) & $-109.3\pm 4.4$\\
@@ -300,12 +297,28 @@ $\log_{10}\lambda$& & $-1.72\pm 0.07$ \\\hline
 \end{tabular}\\
 \end{center}
 \vspace{1mm}
-Note: the observational uncertainties in the position vector
+Notes:\\
+\begin{enumerate}
+\item The kinematic
+  properties for M31 are reported in the galactocentric
+  \citep{vanderMarel12}. 
+
+\item Values in parenthesis correspond to vector
+  components. $\sigma_{\bf x}$ represents the uncertainty on the
+  components of vector ${\bf x}$. 
+\item The values for the individual halo
+masses are consistent with the priors used by \cite{vanderMarel12}.
+
+
+\item The observational uncertainties in the position vector
 correspond to a $5\%$ in each component consistent with the
 uncertainties in the distance \citep[see references
   in][]{vanderMarel08}.
-Note: the value for $\log_{10}\lambda$ is obtained in this Letter
-from a Monte Carlo simulation as described in Section XX.
+
+\item The value for $\log_{10}\lambda$ is obtained in this Letter
+from a Monte Carlo simulation as described in Section
+\ref{subsection:e-l}. 
+\end{enumerate}
 \label{table:1}
 \end{table}
 
@@ -335,6 +348,57 @@ uncertainties in the distance \citep[see references
 
 
 
+\begin{figure*}
+\begin{center}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_BDM.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_BDM_narrow.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM.pdf}
+\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM_narrow.pdf}
+\caption{Upper panels: Histograms of the radial and tangential
+  velocities for LG-like halo pairs in the Bolshoi simulation.   Lower
+  panels: Histograms of the orbital angular momentum ($l_{\rm orb}$)
+  and mechanical energy ($e_{\rm tot}$) per unit of reduced mass
+  calculated considering the halos as point masses. The left (right) panels
+  correspond to the full (reduced) pair sample. The locii for the highest
+  density regions are in the $v_{\rm r}-v_{\rm t}$ plane are listed in
+  Table \ref{table:2}. 
+  The half ellipse in the $v_{\rm r}-v_{\rm t}$ plane corresponds to
+  the observed observational and the circles represent the positions
+  of the pairs from the constrained simulations. The contour line in
+  the $e_{\rm tot}-l_{\rm orb}$ plane encloses $68\%$ of the Monte
+  Carlo generated points to estimated the uncertainties from the
+  observational values summarized in Table  1.}
+\label{fig:rt}
+\end{center}
+
+\end{figure*}
+
+
+\begin{table*}
+\caption{Summary of the comparison of the observational results
+  against $\Lambda$CDM.}
+\begin{center}
+\begin{tabular}{ccccc}\hline
+Physical & (\%) Pairs consistent & \% Pairs consistent & \% Pairs
+with highest & (\%) with highest\\ 
+property & with observations & with observations & likelihood in
+$\Lambda$CDM & likelihood in $\Lambda$CDM\\ 
+ & (full sample) & (reduced sample) & (full sample) & (reduced sample)\\ \hline
+$v_{\rm r}$-$v_{\rm t}$ & (0.4\%) 8/1923 & ($<$0.6\%)0/158 & (1\%)23/1923 & (8\%)13/158\\
+$e_{\rm tot}$-$l_{\rm orb}$ & (15\%)298/1923 & (24\%)38/158 & - & -\\
+$\log_{10}\lambda$ & (13\%)257/1923 & (9\%)15/158 & - & -\\
+$r_{\rm t}=v_{\rm t}/v_{\rm r}$& (12\%)242/1923 & (8\%)13/158 & -& -\\\hline
+\end{tabular}
+\end{center}
+\vspace{1mm}
+Note: In columns 4 and 5 the number of pairs around the prefered region
+in $v_{\rm r}-v_{\rm t}$ in $\Lambda$CDM (as shown in
+Fig. \ref{fig:rt} and summarized in Table \ref{table:2}) are
+calculated within the same observational absolute uncertainty.
+\label{table:3}
+\end{table*}
+
+
 
 \subsection{Radial and tangential velocities}
 
@@ -352,12 +416,11 @@ summarized in Table \ref{table:2}. For the full sample we have $v_{\rm
 the minimum grid size needed to obtain robust statistics for the 2D
 histogram. 
 
-The number of pairs withing the range of uncertainty of observations
-are listed in Table \ref{table:3} (columns 2 and 3). In the same table
-(columns 4 and 5) we summarize the number of pairs around the
-$\Lambda$CDM values within the same range of absolute observational
-uncertainty (i.e. $\sigma_{\rm tan}=17$\kms and $\sigma_{\rm
-  rad}=4$\kms.) 
+The number of pairs compatible with LG observations are listed in
+Table \ref{table:3} (columns 2 and 3). In the same table (columns 4
+and 5) we summarize the number of pairs around the $\Lambda$CDM values
+within the same range of absolute observational uncertainty
+(i.e. $\sigma_{\rm tan}=17$\kms and $\sigma_{\rm rad}=4$\kms.) 
 
 From these results we infer that the pairs around the preferred phase
 space for $\Lambda$CDM are at least $13$ times more common than pairs
@@ -366,7 +429,7 @@ this is a lower bound given that in the reduced sample none of the
 pairs are found in the interval allowed by observations. The high
 eccentric orbit of the observed LG  constitutes an unlikely
 configurations for the $\Lambda$CDM LG-like objects. This holds for
-the full and the subsample of objects. 
+the full and the reduced sample of objects. 
 
 
 From Figure \ref{fig:rt} it is also clear that there is a significant
@@ -381,78 +444,38 @@ the most probable values in a $\Lambda$CDM cosmology with
 tangential-to-radial ratios of $f_{\rm t}= 0.35, 0.45, 0.73$. 
 
 
-\begin{figure*}
-\begin{center}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_BDM.pdf}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_rt_BDM_narrow.pdf}
-\caption{Histograms of the radial and tangential velocities for
-  LG-like halo pairs in the Bolshoi simulation. The left (right) panel
-  correspond to the full (reduced) pair sample.
-The squared panel shows as a shaded histogram the number of pairs on
-the radial and tangential velocities plane. The rectangular panels show the
-  histograms when only one of the velocity components is used to bin
-  the data. The half ellipse corresponds to the observed observational
-  and the circles represent the positions of the
-  pairs from the constrained simulations. The locii for the highest
-  density regions are listed in Table \ref{table:2}.} 
-\label{fig:rt}
-\end{center}
 
-\end{figure*}
-
-
-
-\begin{table*}
-\caption{Summary of the comparison of the observational results
-  against $\Lambda$CDM.}
-\begin{center}
-\begin{tabular}{ccccc}\hline
-Physical & (\%) Pairs consistent & \% Pairs consistent & \% Pairs
-consistent& (\%) Pairs consistent\\ 
-property & with observations & with observations & with $\Lambda$CDM & with $\Lambda$CDM\\ 
- & in full sample & in reduced sample & in full sample & in reduced sample\\ \hline
-$v_{\rm r}$-$v_{\rm t}$ & (0.4\%) 8/1923 & (0\%)0/158 & (1\%)23/1923 & (8\%)13/158\\
-$e_{\rm tot}$-$l_{\rm orb}$ & (15\%)298/1923 & (24\%)38/158 & - & -\\
-$\log_{10}\lambda$ & (13\%)257/1923 & (9\%)15/158 & - & -\\
-$r_{\rm t}=v_{\rm t}/v_{\rm r}$& (12\%)242/1923 & (8\%)13/158 & -& -\\\hline
-\end{tabular}
-\end{center}
-\vspace{1mm}
-Note: In columns 4 and 5 the number of pairs around the prefered region
-in $v_{\rm r}-v_{\rm t}$ in $\Lambda$CDM (as shown in
-Fig. \ref{figure:rt} and summarized in Table \ref{table:2}) are
-calculated within the same observational absolute uncertainty.
-\label{table:3}
-\end{table*}
 
 
 \subsection{Reduced Angular Momentum and Energy}
+\label{subsection:e-l}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM.pdf}
-\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM_narrow.pdf}
-\caption{Histograms of the orbital angular momentum ($l_{\rm orb}$)
-  and mechanical energy ($e_{\rm tot}$) per unit of reduced mass
-  calculated considering the halos as point masses. The panel
-  distribution is the same as in Figure \ref{fig:rt}. The contour line
-  encloses $68\%$ of the Monte Carlo generated points to estimated the
-  uncertainties from the observational values summarized in Table
-  1. The constraints in this plot are less restrictive than in
-  Fig.\ref{fig:rt} due to added uncertainties on the tangential
-  velocity ($100\%$), the square of the norm of the velocity ($40\%$)
-  and the total mass of the two halos ($20\%$). } 
-\label{fig:EJ}
-\end{center}
-\end{figure*}
+%\begin{figure*}
+%\begin{center}
+%\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM.pdf}
+%\includegraphics[keepaspectratio=true,width=0.46\textwidth]{./figures/test_EJ_BDM_narrow.pdf}
+%\caption{
+%Histograms of the orbital angular momentum ($l_{\rm orb}$)
+%  and mechanical energy ($e_{\rm tot}$) per unit of reduced mass
+%  calculated considering the halos as point masses. The panel
+%  distribution is the same as in Figure \ref{fig:rt}. The contour line
+%  encloses $68\%$ of the Monte Carlo generated points to estimated the
+%  uncertainties from the observational values summarized in Table
+%  1. The constraints in this plot are less restrictive than in
+%  Fig.\ref{fig:rt} due to added uncertainties on the tangential
+%  velocity ($100\%$), the square of the norm of the velocity ($40\%$)
+%  and the total mass of the two halos ($20\%$). } 
+%\label{fig:EJ}
+%\end{center}
+%\end{figure*}
 
 
 The two-body problem of point-like masses can serve as a proxy for the
 dynamics of the LG and be used as a tool for  studying the LG within
 the framework of the standard cosmological model. Within the model the
 dynamics of the LG is governed by the (center of mass)  reduced
-angular momentum $l= {{\bf r}_{\rm M31}}\times{\bf v}_{\rm M31}|$ and
-reduced energy  $e=\frac{1}{2} {\bf v}_{\rm M31}|^2 - G M/|{\bf
+angular momentum $l_{\rm orb}= {{\bf r}_{\rm M31}}\times{\bf v}_{\rm M31}|$ and
+reduced energy  $e_{\rm tot}=\frac{1}{2} {\bf v}_{\rm M31}|^2 - G M/|{\bf
   r}_{\rm M31}|$,  where the total mass is $M=m_{\rm M31}+m_{\rm MW}$,
 the reduced mass is $\mu=m_{\rm M31}m_{\rm MW}/M$ and $G$ is the
 gravitational constant.  
@@ -461,45 +484,33 @@ gravitational constant.
 This formulation has a clear theoretical advantage if one considers
 the angular momentum and the mechanical energy as quasi-conserved
 dynamical quantities. This means that, after some formation time,
-these quantities do not significantly evolve as it is the case for the
-radial and tangential velocities.  
+these quantities do not significantly evolve.
+
 
 However, this formulation has an observational disadvantage. The
 reduced energy and angular momentum are derived from very different
 kinds of observations, increasing the uncertainties in their final
 determination.  
 
-A possible conflict between the likelihood of the LG in the
-$\Lambda$CDM model as viewed from the radial and tangential velocities
-as opposed to the angular momentum and energy perspectives would point
-to a particular phase on the LG two-body orbit. Given the masses,
-velocity and position of the observed MW and M31 (Table \ref{table:1}
-) the reduced energy and angular momentum are calculated. The Monte
-Carlo sampling is used to to estimate the uncertainty in these
-quantities.  
-
-Figure \ref{fig:EJ} presents the reduced  energy and angular momentum
-distribution of the constrained and unconstrained LG-like  objects of
-the full and subsample, following the   plotting conventions from
-Figure \ref{fig:rt}.  The  1-$\sigma$ contour of Figure \ref{fig:EJ}
+We use Monte Carlo sampling to estimate the reduced energy and angular
+momentum from the observed properties in the LG listed in
+Table\ref{table:1}. Figure \ref{fig:rt} also presents the results in the
+plane $e_{\rm tot}-l_{\rm orb}$ following the   plotting conventions from
+Figure \ref{fig:rt}. \footnote{The  1-$\sigma$ contour in the lower
+  panels of Figure \ref{fig:rt}
 does not cross the zero level, as can be naively expected from Figure
 \ref{fig:rt}. This happens for the $\approx 80\%$ level
-contour. The small difference between the presentations of the
-observational uncertainties in Figure \ref{fig:rt} versus Figure
-\ref{fig:EJ} stems from the Monte Carlo sampling.  
+contour.}  As expected, the $e_{\rm tot}$  and $l_{\rm orb}$
+constraints are less restrictive compared with the radial and
+tangential velocity constraints; 15\% (24\%) of pairs in the full
+(reduced) sample obey the 1-$\sigma$ observational constraints.  
 
-Visual inspection of Figure \ref{fig:EJ}  shows that the $e_{\rm tot}$  and
-$l_{\rm orb}$ constraints are less restrictive compared with the
-radial and tangential velocity constraints. As summarize in Table
-\ref{table:3}, for the unconstrained full (sub-) sample 15\% (24\%)
-of the LG-like pairs obey the 1-$\sigma$ observational
-constraints. 
-
-All the constrained LGs of the full samples are
+All the constrained LGs of the full and reduced sample are
 consistent with the 1-$\sigma$ observationaluncertainty.  However a
 reduction by a factor of $2$ in the uncertainty of the tangential
 velocity showing that the tangential velocity is below $17$\kms would
-bring these pairs and the $\Lambda$CDM expectation outside the 1-$\sigma$ observational uncertainty. 
+bring these pairs and the $\Lambda$CDM expectation outside the
+1-$\sigma$ observational uncertainty.  
 
 
 \begin{figure*}
@@ -540,56 +551,48 @@ population in the Bolshoi simulation and the distribution from the  Monte Carlo
 simulation used to estimate the uncertainties on $e_{\rm tot}$ and $l_{\rm orb}$. 
 Figure \ref{fig:lambda} shows the likelihood distribution of the
 observational errors and the spin parameter of the LG-like pairs of
-the full (left panel) and the sub- (right panel) samples.  The value
+the full (left panel) and the reduced (right panel) samples.  The value
 of $\lambda$ of the constrained LGs is shown as well.  
 
 The expected configuration in energy and angular momentum of the LG is
-slightly inconsistent with the expectation from halo pairs in $\Lambda
-CDM$.  
-
-The spin parameter of the simulated LG-like objects is skewed towards higher values compared with the observationally estimated value. 
+slightly inconsistent with the expectation from halo pairs in $\Lambda$CDM. The spin parameter of the simulated LG-like objects is skewed towards higher values compared with the observationally estimated value. 
 Inspection of Figure \ref{fig:lambda} shows that the $\lambda$
 distribution is close to a lognormal one and thus resembles the
-distribution of the spin parameter of DM halos in simulation ({\bf
-  Jaime - please provide a reference}) .  
-The estimated value of $\log_{10}\lambda$ of the observed LG is
-$-1.76$, compared with the mean value of $\log_{10}\lambda$ of $-1.51$
-for the full sample and $-1.38$ for the subsample. The values of the
-spin parameter of the 3 constrained LGs are $\log_{10}(\lambda_{\rm
-  CLUES})=-2.21$, $-1.72$ and $-1.65$, with the latter value belonging
-to the sole constrained LG of the subsample.  
+distribution of the spin parameter of DM halos in simulation
+\citep{Bett2007}. 
 
-
-It follows that the observationally estimated energy and angular momentum and the estimated spin parameter impose similar constraints on the simulations and the standard model of cosmology. 
-%JF. Yehuda, I don't understaind this sentence. 
-%This implies that the observed LG does not conspire to have  ($\Lambda$CDM) typical mass, angular momentum and energy and yet have an atypical spin parameter.
-%YH
-
-
+The estimated value of $\log_{10}\lambda$ of the
+observed LG is $-1.72\pm 0.07$, lower than the mean value of
+$\log_{10}\lambda$ of $-1.47\pm0.13$ ($-1.34\pm 0.12$) for the full
+(reduced) sample. The values of the spin parameter of the 3
+constrained LGs are $\log_{10}(\lambda_{\rm  CLUES})=-2.21$, $-1.72$
+and $-1.65$, with the latter value belongingto the sole constrained LG
+of the subsample.   
 
 \section{Conclusions}
 We have presented a comparison between the observed kinematics for the
 M31 in the galactocentric restframe and the expectations for a large
 N-body cosmological simulation in the $\Lambda$CDM cosmology. In the
-simulation we select a sample of halo pairs in the mass range $5\times
-10^{11}<M_{h}/\hMsun<5\times 10^{12}$ that closely match the isolation
-conditions of the Local Group from other massive structures. While the
-observations show that M31 moves towards us  on a highly eccentric orbit,
+simulation we select a large sample of pairs that fulfill isolation
+criteria for the LG. We select a subsabmple that which obeys more
+stringent observational constraints on the mass and separation of the
+MW and M31.
+
+While the observations show that M31 moves towards us  on a highly eccentric orbit,
  the simulation shows that the most common configuration at $z=0$ has
- values $v_{\rm rad, \Lambda CDM}=-65\pm5$\kms and $v_{\rm tan,
-   \Lambda CDM}=62\pm5$ \kms.  
+ values $v_{\rm rad, \Lambda CDM}=-80\pm20$\kms and $v_{\rm tan,
+   \Lambda CDM}=50\pm10$ \kms, where the errorbars are estimated to
+ include the results from the two pair samples.
 
 
 Using the same absolute values for the uncertainty in the observed
-velocity components, we find that halos within the preferred
-$\Lambda$CDM values are five times more common than pairs compatible
-with the observational constraint.  The qualitative nature of these
-results is still valid after a narrower selection on separation and
-total pair mass. Additionally, pairs with a fraction of tangential to
-radial velocity $f_{\rm t}<0.32$ (similar to observations) represent
-$8\%$ of the total sample of LG-like pairs. Making an tighter
-selection to match the observational constraints on the separation and
-total mass results in zero pairs compatible with observations. 
+velocity components, we find that none of the halos in the reduced sample
+are compatible with observations. This makes pairs with the preferred
+$\Lambda$CDM values at least $13$ times more common than pairs
+compatible with the observational constraint. Additionally, pairs with
+a fraction of tangential to radial velocity $f_{\rm t}<0.32$ (similar
+to observations) represent $8\%$ of the same sample.  
+ 
 
 Approximating the LG as two point masses we express the above
 mentioned results in terms of the orbital angular momentum $l_{\rm
@@ -598,10 +601,15 @@ mass. We find that the uncertainties in the tangential velocity, the
 square of the norm of the velocity and the total mass in the LG
 are less constraining on the number of simulated pairs that are
 consistent with the observations. Nevertheless, in the case of the
-LG-pair sample that also fulfills the separation and total mass
-criteria there is a slight tension between simulation and
+reduced sample there is a slight tension between simulation and
 observation. A reduction by a factor of $2$ in the observational
 uncertainty on the radial velocity would clarify this issue. 
+
+We also use the $\lambda$ spin parameter to gauge
+the dynamical state of pairs. The values for the orbital angular momentum
+and energy, merged into the $\lambda$ spin parameter, are in mild
+disagreement with the observational constraints. 
+
 
 In the three pairs from constrained simulations we find kinematics
 dominated by radial velocities. However their velocity components
@@ -612,31 +620,17 @@ separation, total mass constraints and matches the most probable value
 for the dimensionless spin parameter $\lambda$ inferred from
 observations.  
 
-The $\lambda$ spin parameter is itself a useful instrument to gauge
-the dynamical state of pairs. Reduced uncertainties in masses,
-distances and velocities can be included to produce an updated
-estimate for this parameter. This will immedialtly improve the
-statistical comparison between our Local Group and the expectations
-from $\Lambda$CDM. 
 
-In this Letter we have shown that LG-like pairs in $\Lambda$CDM show
-prefered values for their relative velocities, angular momentum and
-total mechanical energy. The values for the orbital angular momentum
-and energy, merged into the $\lambda$ spin parameter, are in mild
-disagreement with the observational constraints. However, there is a
-strong tension with the precise values for the radial and tangential
-velocities. 
-
-Under the approximation of consevartion of the orbital angular
-momentum and mechanical energy, we see that an agreement in the total
-angular momentum and energy and a marked difference with the precise
-balance between today's radial and tangential velocities could only be
-explained if the initial conditions for the formation of the Local
-Group are special in comparison to the initial conditions of any other
-pair of dark matter halos in the $\Lambda$CDM cosmology. This opens a
-new window into the question of how unique, if at all, is the LG in a
-cosmological context. This will continue to be studies within the
-CLUES framework.
+Summarizing, we see we see a broad agreement in the total angular
+momentum and energy and a marked difference with the precise balance
+between today's radial and tangential velocities  Under the
+approximation of consevartion of the orbital angular momentum and
+mechanical energy, this could only be explained if the initial
+conditions for the formation of the Local Group are special in
+comparison to the initial conditions of any other pair of dark matter
+halos in the $\Lambda$CDM cosmology. This opens a new window into the
+question of how unique, if at all, is the LG in a cosmological
+context. This will continue to be studies within the CLUES framework.
 
 
 \label{sec:conclusions}
@@ -664,7 +658,150 @@ Pleiades supercomputer at the NASA Ames Research Center.
 
 
 \bibliographystyle{apj}
-\bibliography{references} 
+%\bibliography{references} 
+\begin{thebibliography}{28}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Besla} {et~al.}(2007){Besla}, {Kallivayalil}, {Hernquist},
+  {Robertson}, {Cox}, {van der Marel}, \& {Alcock}}]{Besla2007}
+{Besla}, G., {Kallivayalil}, N., {Hernquist}, L., {Robertson}, B., {Cox},
+  T.~J., {van der Marel}, R.~P., \& {Alcock}, C. 2007, \apj, 668, 949
+
+\bibitem[{{Bett} {et~al.}(2007){Bett}, {Eke}, {Frenk}, {Jenkins}, {Helly}, \&
+  {Navarro}}]{Bett2007}
+{Bett}, P., {Eke}, V., {Frenk}, C.~S., {Jenkins}, A., {Helly}, J., \&
+  {Navarro}, J. 2007, \mnras, 376, 215
+
+\bibitem[{{Busha} {et~al.}(2011){Busha}, {Marshall}, {Wechsler}, {Klypin}, \&
+  {Primack}}]{Busha2011}
+{Busha}, M.~T., {Marshall}, P.~J., {Wechsler}, R.~H., {Klypin}, A., \&
+  {Primack}, J. 2011, \apj, 743, 40
+
+\bibitem[{{Forero-Romero} {et~al.}(2011){Forero-Romero}, {Hoffman}, {Yepes},
+  {Gottl{\"o}ber}, {Piontek}, {Klypin}, \& {Steinmetz}}]{ForeroRomero2011}
+{Forero-Romero}, J.~E., {Hoffman}, Y., {Yepes}, G., {Gottl{\"o}ber}, S.,
+  {Piontek}, R., {Klypin}, A., \& {Steinmetz}, M. 2011, \mnras, 417, 1434
+
+\bibitem[{{Fouquet} {et~al.}(2012){Fouquet}, {Hammer}, {Yang}, {Puech}, \&
+  {Flores}}]{Fouquet2012}
+{Fouquet}, S., {Hammer}, F., {Yang}, Y., {Puech}, M., \& {Flores}, H. 2012,
+  \mnras, 427, 1769
+
+\bibitem[{{Freeman} \& {Bland-Hawthorn}(2002)}]{Freeman2002}
+{Freeman}, K., \& {Bland-Hawthorn}, J. 2002, \araa, 40, 487
+
+\bibitem[{{Gottloeber} {et~al.}(2010){Gottloeber}, {Hoffman}, \&
+  {Yepes}}]{clues2010}
+{Gottloeber}, S., {Hoffman}, Y., \& {Yepes}, G. 2010, ArXiv e-prints
+
+\bibitem[{{Jarosik} {et~al.}(2011){Jarosik}, {Bennett}, {Dunkley}, {Gold},
+  {Greason}, {Halpern}, {Hill}, {Hinshaw}, {Kogut}, {Komatsu}, {Larson},
+  {Limon}, {Meyer}, {Nolta}, {Odegard}, {Page}, {Smith}, {Spergel}, {Tucker},
+  {Weiland}, {Wollack}, \& {Wright}}]{Jarosik2011}
+{Jarosik}, N., {Bennett}, C.~L., {Dunkley}, J., {Gold}, B., {Greason}, M.~R.,
+  {Halpern}, M., {Hill}, R.~S., {Hinshaw}, G., {Kogut}, A., {Komatsu}, E.,
+  {Larson}, D., {Limon}, M., {Meyer}, S.~S., {Nolta}, M.~R., {Odegard}, N.,
+  {Page}, L., {Smith}, K.~M., {Spergel}, D.~N., {Tucker}, G.~S., {Weiland},
+  J.~L., {Wollack}, E., \& {Wright}, E.~L. 2011, \apjs, 192, 14
+
+\bibitem[{{Karachentsev} {et~al.}(2004){Karachentsev}, {Karachentseva},
+  {Huchtmeier}, \& {Makarov}}]{Karachentsev04}
+{Karachentsev}, I.~D., {Karachentseva}, V.~E., {Huchtmeier}, W.~K., \&
+  {Makarov}, D.~I. 2004, \aj, 127, 2031
+
+\bibitem[{{Kazantzidis} {et~al.}(2008){Kazantzidis}, {Bullock}, {Zentner},
+  {Kravtsov}, \& {Moustakas}}]{Kazantzidis2008}
+{Kazantzidis}, S., {Bullock}, J.~S., {Zentner}, A.~R., {Kravtsov}, A.~V., \&
+  {Moustakas}, L.~A. 2008, \apj, 688, 254
+
+\bibitem[{{Klypin} {et~al.}(1999{\natexlab{a}}){Klypin}, {Gottl{\"o}ber},
+  {Kravtsov}, \& {Khokhlov}}]{KlypinBDM}
+{Klypin}, A., {Gottl{\"o}ber}, S., {Kravtsov}, A.~V., \& {Khokhlov}, A.~M.
+  1999{\natexlab{a}}, \apj, 516, 530
+
+\bibitem[{{Klypin} {et~al.}(1999{\natexlab{b}}){Klypin}, {Kravtsov},
+  {Valenzuela}, \& {Prada}}]{Klypin99}
+{Klypin}, A., {Kravtsov}, A.~V., {Valenzuela}, O., \& {Prada}, F.
+  1999{\natexlab{b}}, \apj, 522, 82
+
+\bibitem[{{Klypin} {et~al.}(2011){Klypin}, {Trujillo-Gomez}, \&
+  {Primack}}]{Bolshoi}
+{Klypin}, A.~A., {Trujillo-Gomez}, S., \& {Primack}, J. 2011, \apj, 740, 102
+
+\bibitem[{{Knebe} {et~al.}(2011){Knebe}, {Libeskind}, {Doumler}, {Yepes},
+  {Gottl{\"o}ber}, \& {Hoffman}}]{Knebe2011}
+{Knebe}, A., {Libeskind}, N.~I., {Doumler}, T., {Yepes}, G., {Gottl{\"o}ber},
+  S., \& {Hoffman}, Y. 2011, \mnras, 417, L56
+
+\bibitem[{{Liu} {et~al.}(2011){Liu}, {Gerke}, {Wechsler}, {Behroozi}, \&
+  {Busha}}]{Liu2011}
+{Liu}, L., {Gerke}, B.~F., {Wechsler}, R.~H., {Behroozi}, P.~S., \& {Busha},
+  M.~T. 2011, \apj, 733, 62
+
+\bibitem[{{McConnachie} {et~al.}(2009){McConnachie}, {Irwin}, {Ibata},
+  {Dubinski}, {Widrow}, {Martin}, {C{\^o}t{\'e}}, {Dotter}, {Navarro},
+  {Ferguson}, {Puzia}, {Lewis}, {Babul}, {Barmby}, {Bienaym{\'e}}, {Chapman},
+  {Cockcroft}, {Collins}, {Fardal}, {Harris}, {Huxor}, {Mackey},
+  {Pe{\~n}arrubia}, {Rich}, {Richer}, {Siebert}, {Tanvir}, {Valls-Gabaud}, \&
+  {Venn}}]{pandas09}
+{McConnachie}, A.~W., {Irwin}, M.~J., {Ibata}, R.~A., {Dubinski}, J., {Widrow},
+  L.~M., {Martin}, N.~F., {C{\^o}t{\'e}}, P., {Dotter}, A.~L., {Navarro},
+  J.~F., {Ferguson}, A.~M.~N., {Puzia}, T.~H., {Lewis}, G.~F., {Babul}, A.,
+  {Barmby}, P., {Bienaym{\'e}}, O., {Chapman}, S.~C., {Cockcroft}, R.,
+  {Collins}, M.~L.~M., {Fardal}, M.~A., {Harris}, W.~E., {Huxor}, A., {Mackey},
+  A.~D., {Pe{\~n}arrubia}, J., {Rich}, R.~M., {Richer}, H.~B., {Siebert}, A.,
+  {Tanvir}, N., {Valls-Gabaud}, D., \& {Venn}, K.~A. 2009, \nat, 461, 66
+
+\bibitem[{{Moore} {et~al.}(1999){Moore}, {Ghigna}, {Governato}, {Lake},
+  {Quinn}, {Stadel}, \& {Tozzi}}]{Moore99}
+{Moore}, B., {Ghigna}, S., {Governato}, F., {Lake}, G., {Quinn}, T., {Stadel},
+  J., \& {Tozzi}, P. 1999, \apjl, 524, L19
+
+\bibitem[{{Peebles}(1971)}]{Peebles1971}
+{Peebles}, P.~J.~E. 1971, \aap, 11, 377
+
+\bibitem[{{Peebles} \& {Nusser}(2010)}]{Peebles2010}
+{Peebles}, P.~J.~E., \& {Nusser}, A. 2010, \nat, 465, 565
+
+\bibitem[{P\'erez \& Granger(2007)}]{IPython}
+P\'erez, F., \& Granger, B.~E. 2007, {C}omput. {S}ci. {E}ng., 9, 21
+
+\bibitem[{{Purcell} \& {Zentner}(2012)}]{Purcell2012}
+{Purcell}, C.~W., \& {Zentner}, A.~R. 2012, {JCAP}, 12, 7
+
+\bibitem[{{Ribas} {et~al.}(2005){Ribas}, {Jordi}, {Vilardell}, {Fitzpatrick},
+  {Hilditch}, \& {Guinan}}]{ribas05}
+{Ribas}, I., {Jordi}, C., {Vilardell}, F., {Fitzpatrick}, E.~L., {Hilditch},
+  R.~W., \& {Guinan}, E.~F. 2005, \apjl, 635, L37
+
+\bibitem[{{Riebe} {et~al.}(2011){Riebe}, {Partl}, {Enke}, {Forero-Romero},
+  {Gottloeber}, {Klypin}, {Lemson}, {Prada}, {Primack}, {Steinmetz}, \&
+  {Turchaninov}}]{2011arXiv1109.0003R}
+{Riebe}, K., {Partl}, A.~M., {Enke}, H., {Forero-Romero}, J., {Gottloeber}, S.,
+  {Klypin}, A., {Lemson}, G., {Prada}, F., {Primack}, J.~R., {Steinmetz}, M.,
+  \& {Turchaninov}, V. 2011, ArXiv e-prints
+
+\bibitem[{{Teyssier} {et~al.}(2012){Teyssier}, {Johnston}, \&
+  {Kuhlen}}]{Teyssier2012}
+{Teyssier}, M., {Johnston}, K.~V., \& {Kuhlen}, M. 2012, \mnras, 426, 1808
+
+\bibitem[{{Tikhonov} \& {Klypin}(2009)}]{Anton09}
+{Tikhonov}, A.~V., \& {Klypin}, A. 2009, \mnras, 395, 1915
+
+\bibitem[{{Tollerud} {et~al.}(2011){Tollerud}, {Boylan-Kolchin}, {Barton},
+  {Bullock}, \& {Trinh}}]{Tollerud2011}
+{Tollerud}, E.~J., {Boylan-Kolchin}, M., {Barton}, E.~J., {Bullock}, J.~S., \&
+  {Trinh}, C.~Q. 2011, \apj, 738, 102
+
+\bibitem[{{van der Marel} {et~al.}(2012){van der Marel}, {Fardal}, {Besla},
+  {Beaton}, {Sohn}, {Anderson}, {Brown}, \& {Guhathakurta}}]{vanderMarel12}
+{van der Marel}, R.~P., {Fardal}, M., {Besla}, G., {Beaton}, R.~L., {Sohn},
+  S.~T., {Anderson}, J., {Brown}, T., \& {Guhathakurta}, P. 2012, \apj, 753, 8
+
+\bibitem[{{van der Marel} \& {Guhathakurta}(2008)}]{vanderMarel08}
+{van der Marel}, R.~P., \& {Guhathakurta}, P. 2008, \apj, 678, 187
+
+\end{thebibliography}
 
 
 \end{document}
