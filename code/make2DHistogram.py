@@ -40,8 +40,8 @@ def MakeSimple2DPlot(xdata,ydata,filename=None,clues=[], clues_label='',xlims=-9
     mtitle = ''
     
     # Define the locations for the axes
-    left, width = 0.12, 0.80
-    bottom, height = 0.12, 0.80
+    left, width = 0.02, 0.95
+    bottom, height = 0.00, 0.98
     bottom_h = left_h = left+width+0.02
     
     # Set up the geometry of the three plots
