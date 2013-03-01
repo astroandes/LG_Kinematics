@@ -35,7 +35,8 @@ Jaime E. Forero-Romero (on behalf of the authors)
 	and/or in the text that describes the figure.  
 
 We have now included explicit mention of the 1-sigma criteria in Table
-1, Table 3 and the caption of Figure 1. There is also a new paragraph in Section 3.1 dicussing the results for 3-sigma uncertainties. 
+1, Table 3 and the caption of Figure 1. There is also a new paragraph
+in Section 3.1 dicussing the results for 3-sigma uncertainties.   
 
    	 Second, the authors make a good case pairs that have Vr/Vtan values
 	 similar to those observed are somewhat rare in the simulations and
