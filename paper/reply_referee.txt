@@ -4,7 +4,7 @@ We have appreciated the positive referee's comments and the suggestions
 for improvement in the paper.
 
 In what follows below the dashes, the referees comments are indented
-and our responses are not commented.
+and our responses are not indented.
 
 Jaime E. Forero-Romero (on behalf of the authors)
 
