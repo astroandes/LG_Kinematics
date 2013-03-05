@@ -11,7 +11,7 @@ be a technical problem on the side of the ApJLetter submissions
 software. The raw eps figures and the pdf we produce (latex, dvips,
 ps2pdf) look complete (see:
 https://github.com/forero/LG_Kinematics/blob/master/paper/ms.pdf ,
-click on 'View Raw').  We kindly as the Editor to pay attention to
+click on 'View Raw').  We kindly ask the Editor to pay attention to
 this issue and inform us if we should make any further change to our
 figures. 
 
