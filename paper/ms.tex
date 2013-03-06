@@ -73,7 +73,7 @@ constrained simulations to statistically study this kinematics in the
 context of the $\Lambda$CDM. The comparison of the ensembles of
 simulated pairs with the observed LG {\bf at the 1-$\sigma$ level in
   the uncertainties} has been done with respect to the
-observed radial and tangential velocities, the reduced orbital energy
+radial and tangential velocities, the reduced orbital energy
 ($e_{\rm tot}$), angular momentum ($l_{\rm orb}$) and the
 dimensionless spin parameter, $\lambda$. Our main results are: (i) the
 preferred radial and tangential velocities for pairs in $\Lambda$CDM
@@ -155,7 +155,7 @@ results in the context of the $\Lambda$CDM model.
 
 
 
-\section{Simulation and Environment}
+\section{Simulation and Pair Samples}
 \label{sec:methods}
 \subsection{The Bolshoi and Constrained Simulations}
 
@@ -190,7 +190,7 @@ particles. The Hubble flow is taken into account to convert the
 peculiar velocities into physical velocities and allow for a
 comparison with observations. We have verified that the main
 conclusions of this paper hold in the case of halos defined by a FOF
-algorithm with a linking length 0.17 times the interparticle
+algorithm with a linking length 0.17 times the mean interparticle
 distance. 
 
 The constrained simulations we use in this Letter are part of the
@@ -247,7 +247,7 @@ distances with respect to the Virgo cluster in the simulation.
 The full observational characteristics that we take in this Letter for
 the MW-M31 pair are listed in Table \ref{table:1}.  
 A more reduced sample from the full sample has been constructed
-so as to fit obey the observational bounds on the masses and
+so as to obey the observational bounds on the masses and
 separation of the two main halos. These amount to:   
 \begin{enumerate}
 \item The separation between the center of mass of the halos is in the
@@ -288,7 +288,7 @@ Notes:
 \item Values in parenthesis correspond to vector
   components. $\sigma_{\bf x}$ represents the uncertainty on the
   components of vector ${\bf x}$. {\bf The uncertainties correspond to
-    1-sigma values.}  
+    1-$\sigma$ values.}  
 \item The values for the individual halo
 masses are consistent with the priors used by \cite{vanderMarel12}.
 
@@ -299,8 +299,7 @@ correspond to a $5\%$ in each component consistent with the
   in][]{vanderMarel08}.
 
 \item The value for $\log_{10}\lambda$ is obtained in this Letter
-from a Monte Carlo simulation as described in Section
-\ref{subsection:e-l}. 
+from a Monte Carlo simulation as described in Section 3.
 \end{enumerate}
 \label{table:1}
 \end{table}
@@ -317,7 +316,7 @@ $\log_{10}\lambda$& & $-1.47\pm 0.13$& $-1.34\pm 0.12$\\\hline
 \end{tabular}
 \end{center}
 \vspace{1mm}
-Note: the velocity uncertainties correspond to the minimal bin size required to
+Note: the velocity uncertainties correspond to the minimum bin size required to
 obtain robust statistics in Figure \ref{fig:rt}
 \label{table:2}
 \end{table}
@@ -334,9 +333,9 @@ obtain robust statistics in Figure \ref{fig:rt}
 \includegraphics[keepaspectratio=true,width=0.42\textwidth]{fig_1b.eps}
 \includegraphics[keepaspectratio=true,width=0.42\textwidth]{fig_1c.eps}
 \includegraphics[keepaspectratio=true,width=0.42\textwidth]{fig_1d.eps}
-\caption{Upper panels: 2D Histograms of the radial and tangential
+\caption{Upper panels: 2D histograms of the radial and tangential
   velocities for LG-like halo pairs in the Bolshoi simulation.   Lower
-  panels: 2D Histograms of the orbital angular momentum ($l_{\rm orb}$)
+  panels: 2D histograms of the orbital angular momentum ($l_{\rm orb}$)
   and mechanical energy ($e_{\rm tot}$) per unit of reduced mass
   calculated considering the halos as point masses. {\bf Left (right) panels
     correspond to the full (reduced) sample}. The bar indicates
@@ -344,9 +343,9 @@ obtain robust statistics in Figure \ref{fig:rt}
   density regions in the $v_{\rm r}-v_{\rm t}$ plane are listed in
   Table \ref{table:2}.   
   The half ellipse in the $v_{\rm r}-v_{\rm t}$ plane corresponds to
-  the observations {\bf with 1-$\sigma$ uncertainties}. The contour
+  the {\bf 1-$\sigma$ uncertainties} in observations. Equivalently, the contour
   line in   the $e_{\rm tot}-l_{\rm orb}$ plane encloses $68\%$ of the
-  Monte   Carlo generated points to estimated the uncertainties from
+  Monte   Carlo generated points from
   the   observational values summarized in Table 1. The circles
   represent the positions of the pairs from the constrained simulations.
 }
@@ -377,8 +376,8 @@ Notes:\\
 \begin{enumerate}
 \item 
 {\bf In columns 2 and 3 consistency is defined from 1-$\sigma$
-  uncerainties for $v_{\rm r}$-$v_{\rm t}$, $e_{\rm tot}$-$l_{\rm
-    orb}$ and $\log_{10}\lambda$. In the case of $r_{\rm t}$ is
+  uncertainties for $v_{\rm r}$-$v_{\rm t}$, $e_{\rm tot}$-$l_{\rm
+    orb}$ and $\log_{10}\lambda$. In the case of $r_{\rm t}$, is
   defined from the constrain $r_{\rm t}<0.32$ derived from the
   1$-\sigma$ observational uncertainties in the radial and tangential
   velocities.} 
@@ -386,15 +385,11 @@ Notes:\\
 In columns 4 and 5 the number of pairs around the preferred region
 in $v_{\rm r}-v_{\rm t}$ in $\Lambda$CDM (as shown in
 Fig. \ref{fig:rt} and summarized in Table \ref{table:2}) are
-calculated within the same observational 1-$\sigma$ absolute uncertainty.
+calculated using the same observational 1-$\sigma$ absolute
+uncertainty on $v_{\rm r}$ and $v_{\rm t}$.
 \end{enumerate}
 \label{table:3}
 \end{table*}
-
-%Obs (full -3sigma) 127
-%Theory (full 3sigma) 130
-%Obs (reduced -3sigma) 11
-%Theory (reduced 3sigma) 17
 
 
 \subsection{Radial and tangential velocities}
@@ -422,14 +417,17 @@ within the same range of absolute observational uncertainty
 
 From these results we infer that the pairs around the preferred phase
 space for $\Lambda$CDM are at least $13$ times more common than pairs
-with the observed velocities for the Local group. We highlight that
+with the observed velocities for the LG. We highlight that
 this is a lower bound given that in the reduced sample none of the
 pairs is found in the interval allowed by observations. The high
 eccentric orbit of the observed LG  constitutes an unlikely
-configurations for the $\Lambda$CDM LG-like objects. This holds for
+configuration for the $\Lambda$CDM LG-like objects. This holds for
 the full and the reduced sample of objects. {\bf These
   conclusions are valid at 1-$\sigma$ level in the observational
-  uncertainties. An agreement between both samples of simulated LGs and the observed LG is reached only at the 3-sigma level.}
+  uncertainties. An equivalence in the abundance between the pairs
+  around the observational values and those around the
+  preferred $\Lambda$CDM velocities is reached only at
+  the 4-$\sigma$ level on the observational uncertainties.}   
 
 
 From Figure \ref{fig:rt} it is also clear that there is a significant
@@ -450,10 +448,10 @@ pairs from the constrained realizations are also show higher $f_{\rm
 \label{subsection:e-l}
 
 The two-body problem of point-like masses can serve as a proxy for the
-dynamics of the LG and be used as a tool for  studying the LG within
+dynamics of the LG and can be used as a tool for  studying the LG within
 the framework of the standard cosmological model. Within the model the
 dynamics of the LG is governed by the (center of mass)  reduced
-angular momentum $l_{\rm orb}= {{\bf r}_{\rm M31}}\times{\bf v}_{\rm M31}|$ and
+angular momentum $l_{\rm orb}= |{{\bf r}_{\rm M31}}\times{\bf v}_{\rm M31}|$ and
 reduced energy  $e_{\rm tot}=\frac{1}{2} {\bf v}_{\rm M31}|^2 - G M/|{\bf
   r}_{\rm M31}|$,  where the total mass is $M=m_{\rm M31}+m_{\rm MW}$,
 the reduced mass is $\mu=m_{\rm M31}m_{\rm MW}/M$ and $G$ is the
@@ -473,13 +471,12 @@ determination.
 
 We use Monte Carlo sampling to estimate the reduced energy and angular
 momentum from the observed properties in the LG listed in
-Table\ref{table:1}. Figure \ref{fig:rt} also presents the results in the
-plane $e_{\rm tot}-l_{\rm orb}$ following the   plotting conventions from
-Figure \ref{fig:rt}. \footnote{The  1-$\sigma$ contour in the lower
+Table\ref{table:1}. Lower panels in Figure \ref{fig:rt} also presents the results in the
+plane $e_{\rm tot}-l_{\rm orb}$\footnote{The  1-$\sigma$ contour in the lower
   panels of Figure \ref{fig:rt}
 does not cross the zero level, as can be naively expected from Figure
-\ref{fig:rt}. This happens for the $\approx 80\%$ level
-contour.}  As expected, the $e_{\rm tot}$  and $l_{\rm orb}$
+\ref{fig:rt}. This happens for the $\approx 80\%$ contour level.}.  As
+expected, the $e_{\rm tot}$  and $l_{\rm orb}$ 
 constraints are less restrictive compared with the radial and
 tangential velocity constraints; 15\% (24\%) of pairs in the full
 (reduced) sample obey the 1-$\sigma$ observational constraints.
@@ -488,10 +485,10 @@ We note that for the reduced sample the preferred region is outside the
 
 All the constrained LGs of the full and reduced sample are
 consistent with the 1-$\sigma$ observational uncertainty.  However a
-reduction by a factor of $2$ in the uncertainty of the tangential
-velocity showing that the tangential velocity is below $17$\kms would
-bring these pairs and the $\Lambda$CDM expectation outside the
-1-$\sigma$ observational uncertainty.  
+an hypothetical increase by a factor of $2$ in accuracy of the
+tangential velocity, showing that it is below $17$\kms, would bring
+these pairs and the $\Lambda$CDM expectation outside this uncertainty
+region.   
 
 
 \begin{figure*}
@@ -603,23 +600,25 @@ observations.
 Summarizing, we see a broad agreement in the total angular
 momentum and energy and a marked difference with the precise balance
 between today's radial and tangential velocities, {\bf i.e. head-on
-  collisions of MW-like halos are not common in $\Lambda$CDM}.
+  collisions of MW-like halos, as described by 1-$\sigma$
+  uncertainties in observations, are not common in $\Lambda$CDM}.
 
 Under the
 approximation of conservation of the orbital angular momentum and
 mechanical energy, this could only be explained if the initial
 conditions for the formation of the Local Group are special in
 comparison to the initial conditions of any other pair of dark matter
-halos in the $\Lambda$CDM cosmology. {\bf A thorough characterization
-  of the small pair sample consistent with observations in terms
-  of halo properties such as concentration, spin and place in the cosmic web
+halos in the $\Lambda$CDM cosmology. {\bf Investigating this
+  perspective, by a thorough characterization  of the small pair
+  sample consistent with observations in terms   of halo properties
+  such as concentration, spin and place in the cosmic web
   \citep{Forero-Romero09,Hoffman12} is  underway (Bustamante et al. in
   prep.)}.    
 
 {\bf The results presented in this Letter open a new window into the
   question of how unique, if at all, is the LG in a cosmological
-  context. This will continue to be studied within the CLUES project
-  framework.}  
+  context. This will continue to be studied within the framework of
+  the CLUES project.}
 
 
 \label{sec:conclusions}

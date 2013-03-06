@@ -6,7 +6,9 @@ for improvement in the paper.
 In what follows below the dashes, the referees comments are indented
 and our responses are not indented.
 
-The refereee raised concerns on Figures that look cut off. It seems to
+Changes in the paper are boldfaced.
+
+The referee raised concerns on Figures that look cut off. It seems to
 be a technical problem on the side of the ApJLetter submissions
 software. The raw eps figures and the pdf we produce (latex, dvips,
 ps2pdf) look complete (see:
@@ -34,9 +36,10 @@ Jaime E. Forero-Romero (on behalf of the authors)
 	1-sigma contours. Please state this clearly in the caption
 	and/or in the text that describes the figure.  
 
-We have now included explicit mention of the 1-sigma criteria in Table
-1, Table 3 and the caption of Figure 1. There is also a new paragraph
-in Section 3.1 dicussing the results for 3-sigma uncertainties.   
+We have now included explicit mention of the 1-sigma criteria in the
+abstract, Table 1, Table 3 and the caption of Figure 1. There is also
+a new paragraph in Section 3.1 dicussing the results for 3-sigma
+uncertainties.     
 
    	 Second, the authors make a good case pairs that have Vr/Vtan values
 	 similar to those observed are somewhat rare in the simulations and
@@ -55,7 +58,7 @@ their low number. There are only 8 of them for the general sample and
 _none_ in the reduced sample. This makes any statistical claim hard to
 obtain. However, we have found that these pairs prefer special large
 scale environments defined by the tidal and velocity shear tensor
-fields, namely they live in filaments. We are also investigating their
+fields: they live in filaments. We are also investigating their
 alignment with respect to the directions along this filaments. We will
 include in that study the referee sugestions to study the
 concentration and spin parameter.
@@ -71,11 +74,5 @@ MW assembly history in LCDM.
 	    a number of	grammatical issues. I strongly suggest a
 	    re-read for type-os and wording. 
 
-We have fixed all the instances noted by the referee in the report.
-
-Concerning the Figures that look cut off, it seems a technical problem
-of the ApJLetter software. The raw eps figures and the pdf we produce
-(latex, dvips, ps2pdf) look complete (see:
-https://github.com/forero/LG_Kinematics/blob/master/paper/ms.pdf ,
-click on 'View Raw')
-
+We have fixed all the instances noted by the referee in the report and
+made a new revesion to remove other typos.
