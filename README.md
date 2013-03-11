@@ -7,6 +7,5 @@ Replicating the results
 =======================
 
 * Clone the repository
-* Enter the code/ directory and open the IPython notebook simulation_JE.ipynb
-* Change the variable 'repo_path' in the first cell to set the path to the cloned repository.
+* Enter code/ and open the IPython notebook main_analysis.ipynb
 * Execute all the cells in the notebook.
