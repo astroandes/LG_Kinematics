@@ -17,7 +17,7 @@ def generate_info(dmh_filename, pairs_ID_filename, output_file='test.out', hubbl
     out = open(output_file, 'w')
     outraw = open(output_file+'.raw', 'w')
     halos_prop=loadtxt(dmh_filename) 
-    iso_pairs_prop=loadtxt(pairs_ID_filename) 
+    iso_pairs_prop=int_(loadtxt(pairs_ID_filename)) 
 
 
     outraw.write('# M1 M2 x1 y1 z1 x2 y2 z2 v1_x v1_y v1_z v2_x v2_y v2_z\n')
@@ -35,15 +35,15 @@ def generate_info(dmh_filename, pairs_ID_filename, output_file='test.out', hubbl
         iso_id_2 = int_(iso_pairs_prop[:,1])
 
     n_pairs = iso_id_1.size
-    print n_pairs
+    print(n_pairs)
     
     n=0
 
     for i in range(n_pairs):        
         #pivot on the less massive halo (i.e. the MW)
-        id_1 = iso_id_2[i]-1
-        id_2 = iso_id_1[i]-1
-
+        id_1 = int(iso_id_2[i]-1)
+        id_2 = int(iso_id_1[i]-1)
+        print(id_1, id_2)
         props_id_1 = halos_prop[id_1,:]
         props_id_2 = halos_prop[id_2,:]
         
@@ -116,11 +116,11 @@ def generate_info(dmh_filename, pairs_ID_filename, output_file='test.out', hubbl
 
 
         if (int_(props_id_1[0]) != int_(iso_id_2[i])):
-            print "Deberian ser iguales", props_id_1[0], iso_id_2[i]
+            print("Deberian ser iguales", props_id_1[0], iso_id_2[i])
             exit 
 
     out.close()
     outraw.close()
-    print "selected in total", n        
+    print("selected in total", n)      
 
     return
